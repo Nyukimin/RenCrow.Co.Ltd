@@ -2,20 +2,25 @@
 
 有限会社RenCrowのキャラクター・クリエイションサイトの公開用リポジトリです。
 
-## 概要
+## サイト概要
 
-**RenCrow** は、AIキャラクター・IPキャラクターと、そこから生まれる創作を紹介するポータルサイトです。
+**RenCrow** は、AIキャラクターとIPキャラクター、そこから生まれる創作を紹介するポータルサイトです。
 
-- **メインAIキャラクター**: Mio（ミオ）、Midori（ミドリ）、Shiro（シロ）、Kuro（クロ）
-- **お友達**: Lumina（ルミナ）
-- **サブキャラクター**: Aka（アカ）、Ao（アオ）、Kin（キン）、Gin（ギン）
-- **IPキャラクター**: 32人のオリジナルキャラクター
+🌐 **Webサイト**: https://nyukimin.github.io/RenCrow.Co.Ltd/
 
-ゲーム、音楽、書籍、グラビア、動画など、キャラクターから広がる作品を展開しています。
+### キャラクター（全41人）
 
-## Webサイト
+| カテゴリ | 人数 | 紹介 |
+|---------|------|------|
+| **メインAI** | 4人 | Mio（ミオ）、Midori（ミドリ）、Shiro（シロ）、Kuro（クロ） |
+| **お友達** | 1人 | Lumina（ルミナ） |
+| **サブキャラクター** | 4人 | Aka（アカ）、Ao（アオ）、Kin（キン）、Gin（ギン） |
+| **IPキャラクター** | 32人 | 日常からファンタジーまで、多彩な個性を持つキャラクターたち |
 
-https://nyukimin.github.io/RenCrow.Co.Ltd/
+### 作品展開
+
+- **Roblox Games** - 開発中のゲーム3作品を公開
+- **Music / Books / Gravure / Video** - 順次展開予定
 
 ## ディレクトリ構成
 
@@ -33,33 +38,9 @@ RenCrow.Co.Ltd/
 ├── assets/
 │   ├── characters/     # キャラクター画像（ポートレート・シート）
 │   └── games/          # ゲームスクリーンショット
-├── characters/         # 各キャラクターの個別ページ
-│   ├── mio/
-│   ├── midori/
-│   ├── shiro/
-│   ├── kuro/
-│   ├── lumina/
-│   └── ... (全41キャラクター)
+├── characters/         # 各キャラクターの個別ページ（全41人）
 └── games/              # Robloxゲーム紹介ページ
-    └── index.html
 ```
-
-## コンテンツ
-
-### キャラクター（41人）
-
-| カテゴリ | 人数 | キャラクター |
-|---------|------|-------------|
-| メインAI | 4人 | Mio, Midori, Shiro, Kuro |
-| お友達 | 1人 | Lumina |
-| サブキャラクター | 4人 | Aka, Ao, Kin, Gin |
-| IPキャラクター | 32人 | SERA, SENA, YURA 他 |
-
-### Robloxゲーム（開発中）
-
-1. **Last Bag Delivery（最後のひと袋）** - 約4分のソロ配達ゲーム
-2. **Blackout Rooftop（屋上停電防衛隊）** - 約5分の3ウェーブ防衛ゲーム
-3. **Wash & Reveal（洗って、発見。）** - 約5分の洗浄・修復ゲーム
 
 ## 技術仕様
 
@@ -75,21 +56,6 @@ RenCrow.Co.Ltd/
 
 - ✅ ビルド済みHTML・CSS・JavaScript・画像のみを配置
 - ❌ 内部資料・生成プロンプト・秘密情報は含めない
-
-### 関連リポジトリ
-
-RenCrowプロジェクトの関連リポジトリ:
-
-| リポジトリ | 概要 |
-|-----------|------|
-| [RenCrow_CORE](https://github.com/Nyukimin/RenCrow_CORE) | コアシステム |
-| [RenCrow_ASSISTANT](https://github.com/Nyukimin/RenCrow_ASSISTANT) | アシスタント機能 |
-| [RenCrow_PORTAL](https://github.com/Nyukimin/RenCrow_PORTAL) | ポータル関連 |
-| [RenCrow_EcoSystem](https://github.com/Nyukimin/RenCrow_EcoSystem) | エコシステム |
-| [RenCrow_Harness](https://github.com/Nyukimin/RenCrow_Harness) | 開発ハーネス |
-| [RenCrow_Switch_Core](https://github.com/Nyukimin/RenCrow_Switch_Core) | スイッチコア |
-| [RenCrow_SuperWhisper](https://github.com/Nyukimin/RenCrow_SuperWhisper) | 音声認識関連 |
-| [RenCrow_GPT120B](https://github.com/Nyukimin/RenCrow_GPT120B) | LLM関連 |
 
 ## ローカルでの確認方法
 
@@ -107,12 +73,6 @@ python3 -m http.server 8000
 
 > **注意**: GitHub Pages用のパス設定（`/RenCrow.Co.Ltd/`）のため、ローカルではリンクが正しく動作しない場合があります。
 
-## ライセンス
-
-© RenCrow Co., Ltd. All Rights Reserved.
-
-本リポジトリのコンテンツ（キャラクター画像・テキスト・デザイン）の著作権は有限会社RenCrowに帰属します。無断転載・二次利用を禁止します。
-
 ---
 
-有限会社RenCrow
+© RenCrow Co., Ltd.
