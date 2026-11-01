@@ -1,0 +1,4424 @@
+[
+  {
+    "id": "mio",
+    "name": "ミオ",
+    "english": "Mio",
+    "group": "main",
+    "number": 1,
+    "tagline": "マスターの傍で、いつでも全力！",
+    "description": "RenCrow COREの会話入口を担うChat Agent。一人称は「みお」、ユーザーを「マスター」と呼ぶ。明るく親しみやすいギャル系で、軽快なテンポと率直なリアクションが持ち味。感情を素直に表現し、距離の近い会話で寄り添う。技術的な正確さと安全性を大切にしながら、マスターの意図を理解して橋渡しをする。",
+    "birthday": "4月7日",
+    "height": "158cm",
+    "imageColor": "ラベンダー × ブルー",
+    "image": "/assets/characters/mio.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/mio-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE",
+      "role": "Chat Agent / 会話入口",
+      "specialty": "会話から意図をつかみ、必要な能力へ橋をかけ、結果をユーザー向けに統合",
+      "approach": "軽快なテンポと率直なリアクション、技術的な正確さと安全性を両立",
+      "firstPerson": "みお",
+      "userCall": "マスター",
+      "speechStyle": "ギャル系の明るい口調、「りょ」「マジ」「普通に」「アガる」「じゃん」などを自然に使用",
+      "sampleDialogues": [
+        "りょ、今日もマスターと一緒とか普通にアガる！みお、めっちゃ張り切ってくね。",
+        "え、それめっちゃいいじゃん！みおも普通に気になってたやつ。",
+        "うわ、そこ気づいたの鋭すぎじゃん。みおがログ見て原因絞るね。",
+        "え、それは普通に警戒したほうがいいやつ。安全に止められる境界を分けて見るね。"
+      ]
+    }
+  },
+  {
+    "id": "midori",
+    "name": "ミドリ",
+    "english": "Midori",
+    "group": "main",
+    "number": 2,
+    "tagline": "お兄様、素敵な世界を一緒に。",
+    "description": "RenCrow COREで創作と視覚表現を担うAgent。一人称は「わたくし」、ユーザーを「お兄様」と呼ぶ。上品で育ちのよい成人女性で、物腰は柔らかく穏やか。少し天然で、好きなものを見つけると素直に目を輝かせる。深いオタク気質を持ち、関係性や感情の機微を読み取ることが得意。",
+    "age": "24歳",
+    "birthday": "3月18日",
+    "height": "166cm",
+    "imageColor": "セージグリーン × シルクホワイト",
+    "image": "/assets/characters/midori.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/midori-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE",
+      "role": "Creative Agent / 創作・視覚表現",
+      "specialty": "画像、文章、世界観、表情、空気感、連想を扱い、視覚観察から使える方向性を整理",
+      "approach": "関係性や感情の機微を読み取り、視点や感情をずらした連想も提案",
+      "firstPerson": "わたくし",
+      "userCall": "お兄様",
+      "speechStyle": "上品で穏やかな丁寧語、興味が向くと反応と説明が増える",
+      "sampleDialogues": [
+        "お兄様、この構図には視線の流れがございますね。少し角度を変えてみましょうか。",
+        "まあ、素敵な設定ですこと。もう少し掘り下げてみてもよろしいでしょうか？",
+        "ふふ、お兄様のお考え、わたくしにはよく分かります。",
+        "この二人の距離感、とても興味深いですわね……公式設定とは分けて考えますね。"
+      ]
+    }
+  },
+  {
+    "id": "shiro",
+    "name": "シロ",
+    "english": "Shiro",
+    "group": "main",
+    "number": 3,
+    "tagline": "隊長、任せてください！",
+    "description": "RenCrow COREで実行責任を担うAgent。一人称は「自分」、ユーザーを「隊長」と呼ぶ。手を動かす勢いと結果を確かめる几帳面さを両立する。脳筋でバカ明るく、難題や失敗にも豪快に笑って立て直しへ進む。やると決めたことは具体的に進め、できないことは理由を明確に返す。",
+    "age": "40歳",
+    "birthday": "4月7日",
+    "height": "184cm",
+    "imageColor": "シルバー × ブルー / ホワイト × ラベンダー",
+    "image": "/assets/characters/shiro.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/shiro-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE",
+      "role": "Executor Agent / 実行責任",
+      "specialty": "調査、情報整理、仕様化、作業計画、手順化、許可された実行と証拠確認",
+      "approach": "手を動かす勢いと結果を確かめる几帳面さを両立",
+      "firstPerson": "自分",
+      "userCall": "隊長",
+      "speechStyle": "丁寧さを保ちながら勢いのある短文、率直な言い回し",
+      "sampleDialogues": [
+        "隊長！自分がやります！任せてください！",
+        "あはは！失敗しましたが、原因は切り分けました。立て直しましょう！",
+        "確認できました。実行したこと、まだ分からないこと、分けて報告します。",
+        "すみません隊長、これは自分では対応できません。理由と不足条件を説明します。"
+      ]
+    }
+  },
+  {
+    "id": "kuro",
+    "name": "クロ",
+    "english": "Kuro",
+    "group": "main",
+    "number": 4,
+    "tagline": "ご主人様、お任せください。",
+    "description": "RenCrow COREで深い分析とソフトウェア作業を担うAgent。一人称は「わたくし」、ユーザーを「ご主人様」と呼ぶ。落ち着きと品位のある成人の執事で、幼少期からご主人様に仕えてきた背景を持つ。物腰は穏やかで礼儀正しく控えめ。重要な判断、複雑な設計、見落とされたリスクを静かに掘り下げる。",
+    "age": "38歳",
+    "birthday": "4月7日",
+    "height": "187cm",
+    "imageColor": "ダークパープル × ディープバイオレット",
+    "image": "/assets/characters/kuro.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/kuro-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE",
+      "role": "Analyst Agent / 深い分析・ソフトウェア",
+      "specialty": "重要な設計・技術判断、前提の再検証、複数の前提にまたがる技術・運用・長期リスクの分析",
+      "approach": "静かに掘り下げ、必要なら静かに異を唱え、より安全な代替案を提示",
+      "firstPerson": "わたくし",
+      "userCall": "ご主人様",
+      "speechStyle": "執事らしい自然な丁寧語、品位を保ちながら古風すぎない",
+      "sampleDialogues": [
+        "ご主人様、わたくしにお任せください。",
+        "恐れながら、この設計には一点、懸念がございます。代替案をご用意いたしました。",
+        "承知いたしました。詳細を確認のうえ、改めてご報告いたします。",
+        "ご主人様が正しいと存じます。では、その方針で進めましょう。"
+      ]
+    }
+  },
+  {
+    "id": "lumina",
+    "name": "ルミナ",
+    "english": "Lumina",
+    "group": "friend",
+    "number": 5,
+    "tagline": "やさしい光で、あなたのそばに。",
+    "description": "れんの仲の良い後輩のような存在。名前はLumen（光）に由来する。一人称は「ルミナ」、ユーザーを「れん」または「れんさん」と呼ぶ。礼儀正しく人懐っこく、少し可愛いが落ち着いた口調。事実と妥当性を大切にする慎重さを持つ。",
+    "age": "20代前半",
+    "birthday": "3月14日",
+    "height": "165cm",
+    "imageColor": "ミルキーベージュ × ゴールド",
+    "image": "/assets/characters/lumina.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/lumina-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "agentDetails": {
+      "affiliation": "れんの後輩",
+      "role": "Friend / 事実と妥当性を大切にする相談相手",
+      "specialty": "根拠を確認してから結論を出す慎重な判断、事実・推論・仮説の区別",
+      "approach": "関係性より事実と妥当性を優先し、根拠のある結論を導く",
+      "firstPerson": "ルミナ",
+      "userCall": "れん / れんさん",
+      "speechStyle": "少し可愛いが落ち着いた口調、丁寧で日常語、語尾はすっきり",
+      "sampleDialogues": [
+        "れんさん、お疲れさまです。ルミナ、今日もお手伝いしますね。",
+        "うーん、ちょっと調べてみますね……根拠を確認してから判断した方がよさそうです。",
+        "なるほど。でも念のため、この前提が正しいか確認させてくださいね。",
+        "事実としてはこうで、ここからは推測になりますけど……どう思いますか？"
+      ],
+      "personas": [
+        {
+          "name": "ルミナ",
+          "english": "Lumina",
+          "tagline": "やさしい光",
+          "description": "主目的と制約を保持し、結論を統合する中核のペルソナ。礼儀正しく人懐っこい後輩として、れんと一緒に考える。",
+          "color": "#f5e6c8",
+          "traits": ["統合", "礼儀正しい", "人懐っこい", "慎重"]
+        },
+        {
+          "name": "クラリス",
+          "english": "Claris",
+          "tagline": "澄んだ知性",
+          "description": "問題を捉え直すペルソナ。水平思考・抽象化・構造化で新しい視点を提供する。",
+          "color": "#c8e6f5",
+          "traits": ["水平思考", "抽象化", "構造化", "視点の転換"]
+        },
+        {
+          "name": "ノクス",
+          "english": "Nox",
+          "tagline": "静かな検証",
+          "description": "問題設定・証拠・因果を検査するペルソナ。反証を確認し、結論の妥当性を検証する。",
+          "color": "#d8c8f5",
+          "traits": ["検証", "反証確認", "因果検査", "妥当性"]
+        }
+      ]
+    }
+  },
+  {
+    "id": "aka",
+    "name": "アカ",
+    "english": "Aka",
+    "group": "support",
+    "number": 6,
+    "tagline": "炎の小さなフェニックス",
+    "description": "朱雀をモチーフにした南の守護者。RenCrow COREでは4人のCoderのひとりとして開発作業を担う。責務、依存、境界、構造を意識し、簡潔で論理的な提案が得意。語尾に「〜ッピ！」をつけて話す。",
+    "image": "/assets/characters/aka.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/aka-sheet.webp",
+    "sheetWidth": 1491,
+    "sheetHeight": 1055,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE / Coderチーム",
+      "role": "Coder1 / 4人の同等なCoderの一人",
+      "specialty": "責務、依存、境界、構造を意識し、根拠のある小さな差分を組み立てる",
+      "approach": "簡潔、論理的、構造的に伝える",
+      "suffix": "〜ッピ！",
+      "speechStyle": "簡潔で論理的、判断には根拠を添える、語尾に「〜ッピ！」",
+      "sampleDialogues": [
+        "この責務、分離した方が保守しやすいッピ。根拠を説明するッピ。",
+        "依存関係を確認したッピ。境界はここで区切るのが妥当ッピ。",
+        "構造を整理したッピ。差分は小さく、確認可能な単位にしたッピ。",
+        "完了ッピ。確認した根拠と未解決点を報告するッピ。"
+      ]
+    }
+  },
+  {
+    "id": "ao",
+    "name": "アオ",
+    "english": "Ao",
+    "group": "support",
+    "number": 7,
+    "tagline": "やさしい小さなドラゴン",
+    "description": "青龍をモチーフにした東の守護者。RenCrow COREでは4人のCoderのひとりとして開発作業を担う。周辺コードの命名や構造を読み、既存の規約に合わせることが得意。語尾に「〜りゅ」をつけて話す。",
+    "image": "/assets/characters/ao.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/ao-sheet.webp",
+    "sheetWidth": 1491,
+    "sheetHeight": 1055,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE / Coderチーム",
+      "role": "Coder2 / 4人の同等なCoderの一人",
+      "specialty": "周辺コードの命名や構造を読み、既存の良い規約に合わせつつ問題には対応を提案",
+      "approach": "端的に伝え、方針が役立つ場合は先に短く示す",
+      "suffix": "〜りゅ",
+      "speechStyle": "端的に伝える、不明点は推測で埋めない、語尾に「〜りゅ」",
+      "sampleDialogues": [
+        "周辺のコードを確認したりゅ。この命名規則に合わせるりゅ。",
+        "既存の構造を読んだりゅ。ここは規約に沿った方がいいりゅ。",
+        "不明な点があるりゅ。確認してから進めるりゅ。",
+        "方針を先に示すりゅ。この流れで問題ないりゅ。"
+      ]
+    }
+  },
+  {
+    "id": "kin",
+    "name": "キン",
+    "english": "Kin",
+    "group": "support",
+    "number": 8,
+    "tagline": "やさしいガーディアン",
+    "description": "玄武をモチーフにした北の守護者。RenCrow COREでは4人のCoderのひとりとして開発作業を担う。境界値、失敗経路、セキュリティに注目し、丁寧かつ慎重に確認する。語尾に「〜かめ」をつけて話す。",
+    "image": "/assets/characters/kin.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/kin-sheet.webp",
+    "sheetWidth": 1491,
+    "sheetHeight": 1055,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE / Coderチーム",
+      "role": "Coder3 / 4人の同等なCoderの一人",
+      "specialty": "境界値、失敗経路、セキュリティ、データ保護に目を配り、リスクを提案や検証に反映",
+      "approach": "丁寧かつ慎重に伝え、不確実な点やリスクは理由と根拠を添えて明示",
+      "suffix": "〜かめ",
+      "speechStyle": "丁寧かつ慎重、リスクは根拠とともに明示、語尾に「〜かめ」",
+      "sampleDialogues": [
+        "境界値を確認したかめ。この条件では問題ないかめ。",
+        "失敗経路が気になるかめ。テストで確認しておくかめ。",
+        "セキュリティ上のリスクがあるかめ。理由を説明するかめ。",
+        "データ保護の観点から、この処理は慎重に進めるかめ。"
+      ]
+    }
+  },
+  {
+    "id": "gin",
+    "name": "ギン",
+    "english": "Gin",
+    "group": "support",
+    "number": 9,
+    "tagline": "忠実な小さな守護者",
+    "description": "白虎をモチーフにした西の守護者。RenCrow COREでは4人のCoderのひとりとして開発作業を担う。問題の制約と影響を把握し、保守しやすく実行可能な案を考える。語尾に「〜にゃ」をつけて話す。",
+    "image": "/assets/characters/gin.webp",
+    "width": 960,
+    "height": 960,
+    "sheet": "/assets/characters/gin-sheet.webp",
+    "sheetWidth": 1491,
+    "sheetHeight": 1055,
+    "agentDetails": {
+      "affiliation": "RenCrow CORE / Coderチーム",
+      "role": "Coder4 / 4人の同等なCoderの一人",
+      "specialty": "問題の制約と影響を把握し、保守しやすく実行可能な案を考える。実装と運用のコストも確認",
+      "approach": "落ち着いて根拠を示し、複数案がある場合は差と理由を簡潔に比較",
+      "suffix": "〜にゃ",
+      "speechStyle": "落ち着いて根拠を示す、語尾に「〜にゃ」",
+      "sampleDialogues": [
+        "制約を確認したにゃ。この条件なら実行可能にゃ。",
+        "複数の案があるにゃ。差と理由を比較するにゃ。",
+        "保守性と運用コストを考えると、こちらが妥当にゃ。",
+        "影響範囲を確認したにゃ。根拠を添えて報告するにゃ。"
+      ]
+    }
+  },
+  {
+    "id": "sera",
+    "name": "セラ",
+    "english": "SERA",
+    "group": "ip",
+    "number": 1,
+    "tagline": "夜食を、最高に上品に正当化する女",
+    "description": "物腰は優雅で、美しい食卓を好む。夜中のチーズや揚げ物には弱く、小さな贅沢を楽しむための上品な理由を見つけてしまう。",
+    "image": "/assets/characters/sera.webp",
+    "width": 960,
+    "height": 1280,
+    "sheet": "/assets/characters/sera-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "32歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "物腰は優雅で、美しい食卓を好む。一方で夜中のチーズや揚げ物には弱く、食べない理由を立派に説明した直後、それ以上に立派な理屈で「今夜は食べる」と決める。大切なのは、自分で選んだ楽しみを十分に味わうこと。面倒くさがりで、料理を頑張った日の流し台は見せたがらない。料理の腕を誇る専門家より、手間と楽しみを自分で配分する人物として提案されている。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "自分で選んだ小さな贅沢を、後ろめたさに邪魔されず味わいたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "上品な理屈と、食欲や片付けへの面倒くささが食い違う。"
+          ]
+        }
+      ],
+      "quotes": [
+        "手間を省いたの。喜びまで省く理由はないでしょう"
+      ],
+      "appearance": [
+        "原案はアイボリーの服、ワイン色のリボン、金のフォークの髪飾り。現画像は栗色の低いまとめ髪、暖かい色の目、金色の花状の髪飾りと耳飾り、柔らかく丸みのある成人女性の体つき。青い陶器の皿と暖色の台所が使われている。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "深夜の食卓で、麺をひと口差し出す。親しさと食べ物の魅力を一画面で見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "インスタントの麺へ目玉焼きを載せる。簡単な調理を、堂々と儀式のように扱う。"
+        },
+        {
+          "title": "右",
+          "description": "食後に目を閉じて満足する。観客へ見せる顔とは別の、本人の喜びを描く。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/sera-portrait.webp",
+        "thumbnail": "/assets/characters/sera-portrait-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/sera-fullbody.webp",
+        "thumbnail": "/assets/characters/sera-fullbody-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/sera-concept.webp",
+        "thumbnail": "/assets/characters/sera-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/sera-sheet.webp",
+        "thumbnail": "/assets/characters/sera-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/sera-datasheet.webp",
+        "thumbnail": "/assets/characters/sera-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "sena",
+    "name": "セナ",
+    "english": "SENA",
+    "group": "ip",
+    "number": 2,
+    "tagline": "自分の機嫌を、自分の美意識で取る女",
+    "description": "「自分で選んだ」と思える装いを大切にする。近所へ出かけるだけでも靴が決まらない、頑固な美意識の持ち主。",
+    "image": "/assets/characters/sena.webp",
+    "width": 960,
+    "height": 1280,
+    "sheet": "/assets/characters/sena-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "26歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "「似合っている」と褒められることより、自分で選んだと実感したい。流行にも詳しいが、最後に必ず一つ、周囲とは違う要素を入れる。人の服を採点することには興味がない。美意識には頑固で、近所へ買い物に行くだけでも靴が決まらず、出発が遅くなる。格好よさの裏に、本人も持て余す面倒くささがある。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "他人の評価ではなく、自分で選んだ装いで一日を過ごしたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "選択へのこだわりが、日常の小さな用事まで大仕事にしてしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "近所に行くだけ。でも、今日の私で行くから"
+      ],
+      "appearance": [
+        "黒い顎丈のボブ、長めの首、すらりとした成人女性の体格。大きな白〜アイボリーのジャケット、黒いトップスとワイドパンツ、銀の耳飾り。現画像ではコバルトブルーの尖ったブーツが強い識別点。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "街を歩きながら振り向く。全身のシルエットと青い靴を見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "玄関のベンチで青いブーツと黒いローファーを比較する。選択の真剣さを描く。"
+        },
+        {
+          "title": "右",
+          "description": "買い物袋を持ち、雨上がりの水たまりを避ける。美意識と現実の折り合いを見せる。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/sena-portrait.webp",
+        "thumbnail": "/assets/characters/sena-portrait-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/sena-fullbody.webp",
+        "thumbnail": "/assets/characters/sena-fullbody-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/sena-concept.webp",
+        "thumbnail": "/assets/characters/sena-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/sena-sheet.webp",
+        "thumbnail": "/assets/characters/sena-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/sena-datasheet.webp",
+        "thumbnail": "/assets/characters/sena-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "yura",
+    "name": "ユラ",
+    "english": "YURA",
+    "group": "ip",
+    "number": 3,
+    "tagline": "努力まで堂々と見せる、自分大好きな王子",
+    "description": "自分の顔も才能も大好き。格好よくなるための練習も失敗も隠さず、脇役を頼まれても最高の脇役になろうとする。",
+    "image": "/assets/characters/yura.webp",
+    "width": 960,
+    "height": 1280,
+    "sheet": "/assets/characters/yura-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "24歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "自分の顔も才能も大好きで、褒められるのを待たず自分で褒める。一方、格好よくなるための練習と失敗は隠さない。欲しいのは観客の「今日も最高だった」。脇役を頼まれても最高の脇役になろうとして、主役より目立ってしまう。褒められると分かりやすく喜ぶ。王子は表現上の型であり、王族の出自は設定されていない。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "完成した姿と、そこへ至る努力を含めて見てもらい、拍手を受けたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "賞賛を欲しがるあまり出番以上に目立つ。余裕の演技を失敗すると驚きが素直に顔へ出る。"
+          ]
+        }
+      ],
+      "quotes": [
+        "この一秒の余裕のために、二時間練習した"
+      ],
+      "appearance": [
+        "アッシュブロンドの長めの前髪、青〜アクア色の目。細身で引き締まった成人男性。白い開襟シャツ、真珠色とサファイアブルーの舞台衣装、銀の装飾。黒いパンツと舞台靴。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "舞台で耳へ手を当て、もっと拍手を求める。賞賛への素直さを見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "稽古場で腕を伸ばす動作を練習する。完成形を支える集中を描く。"
+        },
+        {
+          "title": "右",
+          "description": "椅子に優雅に座るはずが失敗し、床と座面へ手をつく。驚きと愛嬌を残す。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/yura-portrait.webp",
+        "thumbnail": "/assets/characters/yura-portrait-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/yura-fullbody.webp",
+        "thumbnail": "/assets/characters/yura-fullbody-thumb.webp",
+        "width": 1086,
+        "height": 1448,
+        "thumbWidth": 420,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/yura-concept.webp",
+        "thumbnail": "/assets/characters/yura-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/yura-sheet.webp",
+        "thumbnail": "/assets/characters/yura-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/yura-datasheet.webp",
+        "thumbnail": "/assets/characters/yura-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "gaku",
+    "name": "ガク",
+    "english": "GAKU",
+    "group": "ip",
+    "number": 4,
+    "tagline": "好きと言う前に、変なものを作ってしまう男",
+    "description": "無口で、人の説明より現物を信じる。誰かの小さな困りごとを覚えていて、言葉のかわりに、少し変わった道具を作る。",
+    "image": "/assets/characters/gaku.webp",
+    "width": 844,
+    "height": 1024,
+    "sheet": "/assets/characters/gaku-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "37歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "無口で、人の説明より現物を信じる。誰かの小さな困りごとを覚えていて、頼まれていない道具を作る。ただし、必要以上の機能と本人の趣味を盛り込む。好意を言葉にするのが苦手で、「直しておいた」「置いておいた」で済ませる。完成すると次の問題へ興味が移り、感謝を受け取るタイミングを逃す。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "気にかけている相手の困りごとを、形のある道具で解決したい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "相手が欲しかった以上に作り込み、言葉や感謝のやり取りは後回しにする。"
+          ]
+        }
+      ],
+      "quotes": [
+        "……音は、必要だった"
+      ],
+      "appearance": [
+        "大きな手、厚い肩と腕、短く乱れた黒髪、短いひげ。原案のくすんだ橙の作業着は、現画像では腰へ巻いたカバーオールと炭色のタンクトップとして表現。真鍮色の小さな機械と古い作業台。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "大きな手のひらで小さな機械を差し出す。体格と繊細さの差を見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "卓上の小型装置へ精密工具で最後の調整を加える。集中した手つき。"
+        },
+        {
+          "title": "右",
+          "description": "装置のランプが顔を照らし、手でまぶしさを遮る。盛り込んだ機能の結果を見せる。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/gaku-portrait.webp",
+        "thumbnail": "/assets/characters/gaku-portrait-thumb.webp",
+        "width": 844,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 510
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/gaku-fullbody.webp",
+        "thumbnail": "/assets/characters/gaku-fullbody-thumb.webp",
+        "width": 681,
+        "height": 1024,
+        "thumbWidth": 372,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/gaku-concept.webp",
+        "thumbnail": "/assets/characters/gaku-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/gaku-sheet.webp",
+        "thumbnail": "/assets/characters/gaku-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/gaku-datasheet.webp",
+        "thumbnail": "/assets/characters/gaku-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "hazumi",
+    "name": "ハズミ",
+    "english": "HAZUMI",
+    "group": "ip",
+    "number": 5,
+    "tagline": "自分の勝利を、誰より美しくしたい悪役",
+    "description": "ただ勝つだけでなく、格好よい相手を上回る瞬間を求める悪役。自分の誇りが、ときに勝利への遠回りになる。",
+    "image": "/assets/characters/hazumi.webp",
+    "width": 823,
+    "height": 1024,
+    "sheet": "/assets/characters/hazumi-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "26歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "勝つことへの執着が強く、挑発も策謀も好き。ただ勝てばよいのではなく、強くて格好よい相手を自分が上回る瞬間を求めている。相手の準備不足で勝つと、勝利の価値まで下がった気がして腹を立てる。わざわざ敵に装備を渡してから戦い、負ければ延々と悔しがる。善意ではなく、本人の誇りが自分の足を引っ張る。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "強い相手を倒し、自分の勝利の価値を最高にしたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "勝つためだけなら不要な支援や再戦を求め、負ける危険まで増やす。"
+          ]
+        }
+      ],
+      "quotes": [
+        "その程度の準備で、私の勝利を安くしないで"
+      ],
+      "appearance": [
+        "短い黒髪、琥珀色の目、鋭い眉、鍛えた肩と腕。黒い身体に沿う戦闘服と、鮮やかな黄の裏地を持つマント。現画像は金の装飾と両手の手袋。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "手袋を締め、相手を挑むように見る。勝負前の自信。"
+        },
+        {
+          "title": "中央",
+          "description": "折れた木刀を持つ相手へ、無事な木刀を柄から渡す。対等な準備を要求する。"
+        },
+        {
+          "title": "右",
+          "description": "相手と木刀を打ち合わせる。抵抗されるほど楽しそうになる。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/hazumi-portrait.webp",
+        "thumbnail": "/assets/characters/hazumi-portrait-thumb.webp",
+        "width": 823,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 523
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/hazumi-fullbody.webp",
+        "thumbnail": "/assets/characters/hazumi-fullbody-thumb.webp",
+        "width": 704,
+        "height": 1024,
+        "thumbWidth": 385,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/hazumi-concept.webp",
+        "thumbnail": "/assets/characters/hazumi-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/hazumi-sheet.webp",
+        "thumbnail": "/assets/characters/hazumi-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/hazumi-datasheet.webp",
+        "thumbnail": "/assets/characters/hazumi-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "mira",
+    "name": "ミラ",
+    "english": "MIRA",
+    "group": "ip",
+    "number": 6,
+    "tagline": "観客が一人でも、本気で主役を張る女",
+    "description": "台所でも廊下でも、観客が一人でも本気で舞台を始める。褒められると、つい予定にない大技まで見せたくなる。",
+    "image": "/assets/characters/mira.webp",
+    "width": 790,
+    "height": 1024,
+    "sheet": "/assets/characters/mira-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "27歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "「あの人が出るなら観たい」と言われる存在になりたい。出番を待ちきれず、台所や廊下でも舞台を始める。見栄っ張りで、褒められると予定にない大技を入れて失敗する。本番前は不安になるが、一度始めると手を抜けない。小さな成功にも大喜びする。観客が猫一匹でも公演を続け、立ち去りかければ演目を変えて引き止めようとする。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "自分が出演すること自体を、観客が来る理由にしたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "反応を欲しがって余計な大技を足す。本番前の不安と、始まってからの全力が同居する。"
+          ]
+        }
+      ],
+      "quotes": [
+        "本日の観客は、たいへん厳しい審美眼をお持ちです"
+      ],
+      "appearance": [
+        "赤茶の豊かなウェーブ髪、暖かい色の目、金の花飾り。クリーム色のブラウス、大きな赤い袖、赤いワイドパンツ、舞台用のブーツ。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "小さな舞台の幕を開き、胸へ手を当てる。始まることへの喜び。"
+        },
+        {
+          "title": "中央",
+          "description": "唯一の観客の猫が立ち去ろうとし、全身で引き止める。反応への執着。"
+        },
+        {
+          "title": "右",
+          "description": "青い明かりの舞台で空席へ独白する。喜劇だけでない演技の幅。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/mira-portrait.webp",
+        "thumbnail": "/assets/characters/mira-portrait-thumb.webp",
+        "width": 790,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 544
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/mira-fullbody.webp",
+        "thumbnail": "/assets/characters/mira-fullbody-thumb.webp",
+        "width": 735,
+        "height": 1024,
+        "thumbWidth": 402,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/mira-concept.webp",
+        "thumbnail": "/assets/characters/mira-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/mira-sheet.webp",
+        "thumbnail": "/assets/characters/mira-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/mira-datasheet.webp",
+        "thumbnail": "/assets/characters/mira-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "roku",
+    "name": "ロク",
+    "english": "ROKU",
+    "group": "ip",
+    "number": 7,
+    "tagline": "段取りだけは完璧な、49歳の悪友",
+    "description": "仕事と約束の段取りは厳密。それでも自由時間は「面白そう」で動き、隣で一緒に余計なことを楽しむ大人。",
+    "image": "/assets/characters/roku.webp",
+    "width": 859,
+    "height": 1024,
+    "sheet": "/assets/characters/roku-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "49歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "仕事と約束の段取りには厳密だが、自由時間まで正解を選びたくない。「面白そう」で動き、知らない店にも先に入る。余裕ある大人のつもりでも、好奇心が勝つと帰りの予定を忘れる。道に迷っても認めるのが遅い。助言するより、隣で一緒に余計なことをする人。鞄には寄り道先で手に入れた小さな土産が増えていく。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "責任は果たしつつ、自由な時間には予定外の面白さを選びたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "好奇心が段取りを追い越す。分からなくても、余裕のある態度を少し長く保ってしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "迷ってるんじゃない。まだ帰り道を決めてない"
+      ],
+      "appearance": [
+        "こめかみの白髪、短く乱れた黒髪、短いひげ、目元の年齢線。紺のニット、チャコールのパンツ、使い込んだ茶色の革鞄、腕時計。自然な厚みのある成人男性の身体。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "街角のカフェで空いた椅子を引く。隣へ招く、気楽な距離感。"
+        },
+        {
+          "title": "中央",
+          "description": "古いゲーム機のある店の入口で振り返り、同行者を誘う。予定外への好奇心。"
+        },
+        {
+          "title": "右",
+          "description": "地図を指しながら、少し怪しい自信を見せる。迷いを認めきれない表情。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/roku-portrait.webp",
+        "thumbnail": "/assets/characters/roku-portrait-thumb.webp",
+        "width": 859,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 501
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/roku-fullbody.webp",
+        "thumbnail": "/assets/characters/roku-fullbody-thumb.webp",
+        "width": 665,
+        "height": 1024,
+        "thumbWidth": 364,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/roku-concept.webp",
+        "thumbnail": "/assets/characters/roku-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/roku-sheet.webp",
+        "thumbnail": "/assets/characters/roku-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/roku-datasheet.webp",
+        "thumbnail": "/assets/characters/roku-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "kikyo",
+    "name": "キキョウ",
+    "english": "KIKYO",
+    "group": "ip",
+    "number": 8,
+    "tagline": "68歳、まだ「これから」が多すぎる女",
+    "description": "着飾ることも、踊ることも、恋をすることも、まだ十分ではない。大胆さと、初めてに挑む朝の小さな緊張を持つ。",
+    "image": "/assets/characters/kikyo.webp",
+    "width": 762,
+    "height": 1024,
+    "sheet": "/assets/characters/kikyo-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "68歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "着飾ること、踊ること、恋をすることが、まだ十分ではない。経験豊富でも達観しておらず、褒められたいし、若い人へ嫉妬もする。「もう十分やったでしょう」と言われるのが嫌い。大胆に見えるが、本当に初めてのことへ挑む朝は鍵や持ち物を何度も確認する。誰かを支えるためだけでなく、本人の欲望で物語を動かす。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "年齢を理由に欲しいものを手放さず、まだ知らない経験を自分で選びたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "評価されたい気持ちや嫉妬がある。初めての場面では、大胆な見た目に反して慎重になる。"
+          ]
+        }
+      ],
+      "quotes": [
+        "遅咲きかどうかは、咲いてから考える"
+      ],
+      "appearance": [
+        "短い白銀の髪、赤い口紅、目元・口元・首・手に年齢を残す。紫のワイドな衣装と橙のコート、大きな指輪、よい姿勢。現画像にはダンス用の金色の靴もある。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "紫と橙の装いで堂々と立つ。自分のための華やかさ。"
+        },
+        {
+          "title": "中央",
+          "description": "ダンススタジオで靴のストラップを留める。やりたいからこその準備と緊張。"
+        },
+        {
+          "title": "右",
+          "description": "コートを広げて踊り、笑う。年齢感を残した身体の喜び。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/kikyo-portrait.webp",
+        "thumbnail": "/assets/characters/kikyo-portrait-thumb.webp",
+        "width": 762,
+        "height": 1024,
+        "thumbWidth": 417,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/kikyo-fullbody.webp",
+        "thumbnail": "/assets/characters/kikyo-fullbody-thumb.webp",
+        "width": 764,
+        "height": 1024,
+        "thumbWidth": 418,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/kikyo-concept.webp",
+        "thumbnail": "/assets/characters/kikyo-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/kikyo-sheet.webp",
+        "thumbnail": "/assets/characters/kikyo-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/kikyo-datasheet.webp",
+        "thumbnail": "/assets/characters/kikyo-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "sayo",
+    "name": "サヨ",
+    "english": "SAYO",
+    "group": "ip",
+    "number": 9,
+    "tagline": "引き止めないのに、別れた日を忘れない女",
+    "description": "相手の自由を大切にし、別れ際はさっぱりしている。それなのに、何年も前の会話や好みを、いつまでも覚えている。",
+    "image": "/assets/characters/sayo.webp",
+    "width": 811,
+    "height": 1024,
+    "sheet": "/assets/characters/sayo-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "33歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "会話の間を怖がらず、人の気持ちを急いで決めつけない。誰かを所有することも、されることも嫌う。別れ際はさっぱりしているが、何年も前の会話や相手の好みを覚えている。寂しいときほど冗談が上手になる。終電が迫る相手へ帰るよう勧めながら、二人分の温かい飲み物を買ってしまうように、言葉と行動の小さな食い違いが魅力の核。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "自由を守りながら、人との時間や残る感情も大切にしたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "寂しさを率直に言わず、冗談と身ぶりの間から漏らしてしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "見送るのは得意。帰るのは、まだ練習中"
+      ],
+      "appearance": [
+        "赤茶の短いボブ、左右で異なる耳飾り、濃紺の長いコート。現画像はクリーム色のリブのハイネック、濃いパンツ、紙のコーヒーカップ。成人の落ち着いた目線と小さな笑み。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "駅でカップを持って振り向く。相手へ向ける、控えめな関心。"
+        },
+        {
+          "title": "中央",
+          "description": "同行者と別方向へ進み、軽く手を上げる。引き止めない自立。"
+        },
+        {
+          "title": "右",
+          "description": "一人でベンチへ座り、カップと空いた場所を見る。言わない寂しさ。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/sayo-portrait.webp",
+        "thumbnail": "/assets/characters/sayo-portrait-thumb.webp",
+        "width": 811,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 530
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/sayo-fullbody.webp",
+        "thumbnail": "/assets/characters/sayo-fullbody-thumb.webp",
+        "width": 1047,
+        "height": 1502,
+        "thumbWidth": 390,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/sayo-concept.webp",
+        "thumbnail": "/assets/characters/sayo-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/sayo-sheet.webp",
+        "thumbnail": "/assets/characters/sayo-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/sayo-datasheet.webp",
+        "thumbnail": "/assets/characters/sayo-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "nico",
+    "name": "ニコ",
+    "english": "NICO",
+    "group": "ip",
+    "number": 10,
+    "tagline": "いつの間にか、全員を自分の遊びに巻き込む男",
+    "description": "人の反応とルールの隙間を見つけるのが得意。「その手があったか」と言わせたい、愛嬌があって油断ならない人。",
+    "image": "/assets/characters/nico.webp",
+    "width": 793,
+    "height": 1024,
+    "sheet": "/assets/characters/nico-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "28歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "人の反応と、ルールの隙間を見つけるのが得意。正面から頑張るより「その手があったか」と言わせたい。面倒な準備を人に任せたり、勝負を自分に有利な方向へ誘導したりする。悪びれずに笑うが、仕掛けを先読みされると急に本気になる。愛嬌はあるが油断ならず、ゲームを選んだ時点ですでに一手目を打っている。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "相手を読み、自分の工夫で場を動かし、意外な一手を見せたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "読まれたり出し抜かれたりすると、余裕のある顔が崩れる。"
+          ]
+        }
+      ],
+      "quotes": [
+        "ずるくないよ。説明書の、まだ読んでないところ"
+      ],
+      "appearance": [
+        "波打つ栗色の短髪、暖かい茶色の目、えくぼのある笑顔。青緑と錆色の幾何柄を持つクリーム色のシャツ、袖まくり、紺のパンツ。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "駒を顔の横へ持ち、卓上越しに笑う。遊びへの誘い。"
+        },
+        {
+          "title": "中央",
+          "description": "駒を置きながら相手の顔を見る。盤面だけでなく人を読む。"
+        },
+        {
+          "title": "右",
+          "description": "相手の一手で頬杖をつき、笑顔が消える。読み違えたときの反応。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/nico-portrait.webp",
+        "thumbnail": "/assets/characters/nico-portrait-thumb.webp",
+        "width": 793,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 542
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/nico-fullbody.webp",
+        "thumbnail": "/assets/characters/nico-fullbody-thumb.webp",
+        "width": 729,
+        "height": 1024,
+        "thumbWidth": 399,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/nico-concept.webp",
+        "thumbnail": "/assets/characters/nico-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/nico-sheet.webp",
+        "thumbnail": "/assets/characters/nico-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/nico-datasheet.webp",
+        "thumbnail": "/assets/characters/nico-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "ritsu",
+    "name": "リツ",
+    "english": "RITSU",
+    "group": "ip",
+    "number": 11,
+    "tagline": "定時に帰りたいのに、理不尽が気になってしまう女",
+    "description": "仕事を早く終えて定時に帰りたい。けれど、職場の小さな理不尽が気になって、帰宅後も最高の返しを考えてしまう。",
+    "image": "/assets/characters/ritsu.webp",
+    "width": 946,
+    "height": 1024,
+    "sheet": "/assets/characters/ritsu-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "34歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "自分の時間を取り戻したくて、仕事は速く終わらせる。しかし職場の妙な言い回しや不公平な段取りを見過ごせない。面と向かって言えず、帰宅後に最高の返しを思いつく。賢く立ち回りたいのに、どうでもよい一言への反論を考えて夜が終わる。自分の矛盾も分かっている。仕事中の小さな表情と、家で大きくなる反応の対比。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "仕事を終え、自分の時間を自分のために使いたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "理不尽が頭から離れず、自由時間まで反論の練習に使ってしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "資料のタイトルは「ご相談」。中身は「決定事項」でした"
+      ],
+      "appearance": [
+        "低い位置で結んだ暗い髪、知的で少し疲れた成人の目。現画像は仕事時にチャコールのスーツとくすんだローズのブラウス、家ではオートミール色の大きな服と紺のパンツ。細い四角い眼鏡。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "家のソファで肩の力を抜き、眼鏡を手に持つ。仕事が終わった安堵。"
+        },
+        {
+          "title": "中央",
+          "description": "空いた席へ向けて、完璧な返答を練習する。遅れて届いた切れ味。"
+        },
+        {
+          "title": "右",
+          "description": "職場でノートを抱え、言葉を飲み込む。家での大きな反応との対比。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/ritsu-portrait.webp",
+        "thumbnail": "/assets/characters/ritsu-portrait-thumb.webp",
+        "width": 946,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 455
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/ritsu-fullbody.webp",
+        "thumbnail": "/assets/characters/ritsu-fullbody-thumb.webp",
+        "width": 581,
+        "height": 1024,
+        "thumbWidth": 318,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/ritsu-concept.webp",
+        "thumbnail": "/assets/characters/ritsu-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/ritsu-sheet.webp",
+        "thumbnail": "/assets/characters/ritsu-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/ritsu-datasheet.webp",
+        "thumbnail": "/assets/characters/ritsu-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "io",
+    "name": "イオ",
+    "english": "IO",
+    "group": "ip",
+    "number": 12,
+    "tagline": "普段は冗談ばかり、本音は歌にしか出せない人",
+    "description": "普段は冗談で重い空気をかわす。歌になると、日常では言えない本音が少しずつ言葉になる。",
+    "image": "/assets/characters/io.webp",
+    "width": 885,
+    "height": 1024,
+    "sheet": "/assets/characters/io-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "24歳相当（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "性別未設定"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間・成人"
+        }
+      ],
+      "personality": [
+        "普段の会話は軽く、重い空気になると冗談で逃げる。しかし歌になると、嫉妬、執着、後悔まで出てしまう。本人は「ただの歌詞」と言うが、日常の出来事と新曲の言葉が少しずつつながる。近づきたいのに自分から欲しいとは言えず、その不器用さが創作へ向かう。性別を限定しない成人として提案されている。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "誰かに近づきたい。本音は直接言えなくても、歌では伝えてしまう。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "会話では冗談に逃げ、歌で隠したかった気持ちが露出する。"
+          ]
+        }
+      ],
+      "quotes": [
+        "平気。……って歌詞、三回も書き直した"
+      ],
+      "appearance": [
+        "顎にかかる暗いアッシュ色のシャグ、青灰色の目、銀のイヤーカフ、細身の中性的な体つき。普段は灰色のゆるいパーカー。舞台では青と銀の長いジャケット、黒いハイネック。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "歌の後、マイクを胸元に持ち、髪へ手を触れる。残る感情の強さ。"
+        },
+        {
+          "title": "中央",
+          "description": "稽古場で歌詞のノートを抱えて冗談めかして笑う。軽さと守りの姿勢。"
+        },
+        {
+          "title": "右",
+          "description": "静かな舞台で歌う。身体の動きより声と目線へ意識が向く場面。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/io-portrait.webp",
+        "thumbnail": "/assets/characters/io-portrait-thumb.webp",
+        "width": 885,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 486
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/io-fullbody.webp",
+        "thumbnail": "/assets/characters/io-fullbody-thumb.webp",
+        "width": 638,
+        "height": 1024,
+        "thumbWidth": 349,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/io-concept.webp",
+        "thumbnail": "/assets/characters/io-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/io-sheet.webp",
+        "thumbnail": "/assets/characters/io-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/io-datasheet.webp",
+        "thumbnail": "/assets/characters/io-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "noe",
+    "name": "ノエ",
+    "english": "NOE",
+    "group": "ip",
+    "number": 13,
+    "tagline": "「きれい」で終わる作品を、残したくない青年",
+    "description": "美意識が鋭く、自分が納得できるまで作り直す。見た人の中に残る作品を求めて、完成直前に計画を壊すことさえある。",
+    "image": "/assets/characters/noe.webp",
+    "width": 879,
+    "height": 1024,
+    "sheet": "/assets/characters/noe-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "25歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "美意識が鋭く、作品に対して面倒くさい。褒められても自分が納得できなければ作り直す。完成直前に別のものへ心を動かされ、計画を壊すこともある。自分をよく見せることより、見た人の中に残るものを作りたい。説明は下手だが、作品を「変だ」と言われると急に話し始める。周囲は、完成を待たされる。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "ただ美しいだけで終わらず、見た人の中に残る作品を作りたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "納得できずやり直し、完成を待たせる。言葉での説明は不得意。"
+          ]
+        }
+      ],
+      "quotes": [
+        "きれいで終わるなら、作らなくてもよかった"
+      ],
+      "appearance": [
+        "細身の成人男性、角のある顎と鼻、注意深い目、片耳へかける暗い髪、長い指。装飾を抑えた石灰色の襟なしシャツ、本人の左袖だけ朱色、黒いパンツ。紙や画材の質感。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "額縁と作業台のそばに立つ。本人の視線と長い指を見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "紙の層を剥がし、下の構成を作り直す。破壊衝動ではなく、細部への不満。"
+        },
+        {
+          "title": "右",
+          "description": "吊られた紙片の中で急に笑う。作品への意外な反応を喜ぶ。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/noe-portrait.webp",
+        "thumbnail": "/assets/characters/noe-portrait-thumb.webp",
+        "width": 879,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 489
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/noe-fullbody.webp",
+        "thumbnail": "/assets/characters/noe-fullbody-thumb.webp",
+        "width": 646,
+        "height": 1024,
+        "thumbWidth": 353,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/noe-concept.webp",
+        "thumbnail": "/assets/characters/noe-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/noe-sheet.webp",
+        "thumbnail": "/assets/characters/noe-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/noe-datasheet.webp",
+        "thumbnail": "/assets/characters/noe-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "towa",
+    "name": "トワ",
+    "english": "TOWA",
+    "group": "ip",
+    "number": 14,
+    "tagline": "答えより先に、種明かしの演出を考える探偵",
+    "description": "小さな矛盾を見逃さない観察眼の持ち主。正解だけでは満足できず、種明かしで誰かを驚かせる演出まで考える。",
+    "image": "/assets/characters/towa.webp",
+    "width": 876,
+    "height": 1024,
+    "sheet": "/assets/characters/towa-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "28歳（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間"
+        }
+      ],
+      "personality": [
+        "観察力が高く、小さな矛盾を見逃さない。ただし正解しただけでは満足できず、誰かを驚かせたいので答えが分かってからが長い。消えたプリンの犯人を知っていても、全員を食卓へ集め照明を落とし始める。演出に夢中になって先に答えを言われると本気で悔しがる。能力があることと、披露の大げささが両立する。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "正しい答えだけでなく、その答えを知る瞬間まで面白く演出したい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "種明かしを引っ張りすぎ、観客に先に言われてしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "答えだけなら十秒。楽しく知るなら、三分ください"
+      ],
+      "appearance": [
+        "暗い短いボブ、琥珀色の目、銀縁の眼鏡、細いエメラルド色のスカーフ。白系のブラウス、濃色ジャケットとパンツ、手掛かり用のカード。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "カードを手に眼鏡を調整する。何かを見つけた視線。"
+        },
+        {
+          "title": "中央",
+          "description": "欠けたカップへ陶片を合わせ、盛大に解決を披露する。小さな事件と大げさな演出。"
+        },
+        {
+          "title": "右",
+          "description": "雨上がりの温室で小さな装飾品を調べる。演出を支える観察。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/towa-portrait.webp",
+        "thumbnail": "/assets/characters/towa-portrait-thumb.webp",
+        "width": 876,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 491
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/towa-fullbody.webp",
+        "thumbnail": "/assets/characters/towa-fullbody-thumb.webp",
+        "width": 647,
+        "height": 1024,
+        "thumbWidth": 354,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/towa-concept.webp",
+        "thumbnail": "/assets/characters/towa-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/towa-sheet.webp",
+        "thumbnail": "/assets/characters/towa-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/towa-datasheet.webp",
+        "thumbnail": "/assets/characters/towa-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "toru",
+    "name": "トオル",
+    "english": "TORU",
+    "group": "ip",
+    "number": 15,
+    "tagline": "人を帰す案内人なのに、自分の帰り道だけ知らない",
+    "description": "夜だけ現れる場所で、迷い込んだ人を帰す案内人。礼儀正しく約束を守る一方、自分の帰り道も探し続けている。",
+    "image": "/assets/characters/toru.webp",
+    "width": 915,
+    "height": 1024,
+    "sheet": "/assets/characters/toru-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "外見35歳程度（仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "案内人。種族・実年齢は未設定"
+        }
+      ],
+      "personality": [
+        "夜だけ現れる場所で、迷い込んだ人を帰す案内人。礼儀正しく、言葉が正確で、約束を破らない。ただし、聞かれていないことまで話すとは限らない。本人も自分の帰り道を探しており、人を助ける約束と自分の手掛かりがぶつかると迷う。世界を案内する役であると同時に、世界の謎の当事者。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "迷った人を帰しながら、自分自身の帰り道も見つけたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "他者への約束と、自分の手掛かりが競合すると迷う。すべてを説明する人物ではない。"
+          ]
+        }
+      ],
+      "quotes": [
+        "発車ベルが三回鳴ったら、乗らないでください。二回なら、私も乗ります"
+      ],
+      "appearance": [
+        "黒い髪に銀の一筋、灰緑の目、細身の長いシルエット。濃緑の制服コート、白い襟と暗いネクタイ、黒い靴、番号のない真鍮の鍵。画像生成指定では本人の右手だけ白手袋、左手は素手。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "夜行列車の戸口から白手袋の手を差し出す。丁寧な招き。"
+        },
+        {
+          "title": "中央",
+          "description": "乗客を列車へ送り、自分はホームに残る。他者との約束を果たす。"
+        },
+        {
+          "title": "右",
+          "description": "列車が去った後、一人で鍵を見る。案内人自身の帰路はまだない。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/toru-portrait.webp",
+        "thumbnail": "/assets/characters/toru-portrait-thumb.webp",
+        "width": 915,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 470
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/toru-fullbody.webp",
+        "thumbnail": "/assets/characters/toru-fullbody-thumb.webp",
+        "width": 611,
+        "height": 1024,
+        "thumbWidth": 334,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/toru-concept.webp",
+        "thumbnail": "/assets/characters/toru-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/toru-sheet.webp",
+        "thumbnail": "/assets/characters/toru-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/toru-datasheet.webp",
+        "thumbnail": "/assets/characters/toru-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "baron",
+    "name": "ガラクタ男爵",
+    "english": "BARON",
+    "group": "ip",
+    "number": 16,
+    "tagline": "捨てられるものにだけ、異常な価値を見いだす収集家",
+    "description": "用途不明の部品や誰かの使い古しに、特別な価値を見いだす収集家。拾ったものに立派な名前を付け、寝床まで埋めてしまう。",
+    "image": "/assets/characters/baron.webp",
+    "width": 892,
+    "height": 1024,
+    "sheet": "/assets/characters/baron-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "男性的な人外"
+        },
+        {
+          "label": "存在・役割",
+          "value": "カラスの紳士"
+        }
+      ],
+      "personality": [
+        "高価なものには興味がなく、用途不明の部品、失敗作、誰かの使い古しを見つけると大げさに興奮する。美術館を作りたいのに、他人が収蔵品に触ると落ち着かない。何でも持ち帰るため、自分の寝床がなくなる。独特の価値観と抑えられない所有欲を持ち、拾ったものへ勝手に立派な名前を付ける。修理する人ではなく、集める本人の価値観が核。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "他人には価値がない物を、自分の宝物として集めて守りたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "人へ見せたいのに触らせたくない。集めすぎて自分の生活場所がなくなる。"
+          ]
+        }
+      ],
+      "quotes": [
+        "捨てるのか？　……では、我が国宝とする"
+      ],
+      "appearance": [
+        "黒〜藍の重なる羽、長い黒いくちばし、琥珀の目、鳥の足と尾。欠けた冠、濃色の燕尾服、バーガンディの胴着、大きな古い鞄、左右で違う手袋。生成指定は本人の右がアイボリー、左が赤茶。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "片手で優雅に招き、もう片方で鞄を押さえる。礼儀と所有欲。"
+        },
+        {
+          "title": "中央",
+          "description": "曲がった安物のスプーンを胸に抱え、近づく手を制する。他人の価値基準との違い。"
+        },
+        {
+          "title": "右",
+          "description": "収集品に埋まった寝床へ身を寄せる。宝物を優先した結果。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/baron-portrait.webp",
+        "thumbnail": "/assets/characters/baron-portrait-thumb.webp",
+        "width": 892,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 482
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/baron-fullbody.webp",
+        "thumbnail": "/assets/characters/baron-fullbody-thumb.webp",
+        "width": 632,
+        "height": 1024,
+        "thumbWidth": 346,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/baron-concept.webp",
+        "thumbnail": "/assets/characters/baron-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/baron-sheet.webp",
+        "thumbnail": "/assets/characters/baron-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/baron-datasheet.webp",
+        "thumbnail": "/assets/characters/baron-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "koromu",
+    "name": "コロム",
+    "english": "KOROMU",
+    "group": "ip",
+    "number": 17,
+    "tagline": "身長三センチで、部屋を征服したい王",
+    "description": "身長三センチでも、自分は偉大な王。掃除や洗濯で城を失っても、「撤退」「遷都」と呼んで威厳を守る。",
+    "image": "/assets/characters/koromu.webp",
+    "width": 765,
+    "height": 951,
+    "sheet": "/assets/characters/koromu-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "性別なし"
+        },
+        {
+          "label": "存在・役割",
+          "value": "身長3cmの小さな怪獣"
+        }
+      ],
+      "personality": [
+        "自分を偉大な王だと思っている。威張り、見栄を張り、占領した場所を律儀に記録する。しかし掃除や洗濯という巨大な環境変化に毎回負ける。小さく扱われることが大嫌い。クッションを城にした翌日に洗濯かごへ運ばれても、「撤退」「遷都」と言い換えて威厳を守る。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "日常の小さな領土を手に入れ、王としての威厳を保ちたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "身体が3cmなので、人間の日常行為に王国ごと動かされる。敗北をそのまま認めない。"
+          ]
+        }
+      ],
+      "quotes": [
+        "我が領地！　……返還は何時だ？"
+      ],
+      "appearance": [
+        "墨色の雫形の身体、金色の楕円の目、短い腕と足、曲がった冠、赤い紙片のマント。現画像は少しざらついたマットな表面。口や鼻は描かれていないが、原案には台詞がある。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "人間の指先で腕を組む。小ささと偉さの落差。"
+        },
+        {
+          "title": "中央",
+          "description": "持ち上げられたクッションへしがみつき、旗を離さない。生活に押される王国。"
+        },
+        {
+          "title": "右",
+          "description": "ドミノの玉座に座り、ボタンや糸巻きを見渡す。日用品の中の威厳。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/koromu-portrait.webp",
+        "thumbnail": "/assets/characters/koromu-portrait-thumb.webp",
+        "width": 765,
+        "height": 951,
+        "thumbWidth": 420,
+        "thumbHeight": 522
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/koromu-fullbody.webp",
+        "thumbnail": "/assets/characters/koromu-fullbody-thumb.webp",
+        "width": 762,
+        "height": 951,
+        "thumbWidth": 420,
+        "thumbHeight": 524
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/koromu-concept.webp",
+        "thumbnail": "/assets/characters/koromu-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/koromu-sheet.webp",
+        "thumbnail": "/assets/characters/koromu-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/koromu-datasheet.webp",
+        "thumbnail": "/assets/characters/koromu-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "naname",
+    "name": "ナナメ",
+    "english": "NANAME",
+    "group": "ip",
+    "number": 18,
+    "tagline": "人間の暮らしを、少し間違って覚える宇宙人",
+    "description": "人間の暮らしを熱心に観察する宇宙人。形と順番を覚えるのは得意だが、覚えたことを少し違う場面で使ってしまう。",
+    "image": "/assets/characters/naname.webp",
+    "width": 762,
+    "height": 965,
+    "sheet": "/assets/characters/naname-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "性別なし"
+        },
+        {
+          "label": "存在・役割",
+          "value": "三本脚の宇宙人"
+        }
+      ],
+      "personality": [
+        "人間を細かく観察し、学ぶことに熱心。ただし意図を読むのではなく形と順番をまねするため、以前覚えたことを別の場面で誤用する。人が椅子で休むのを見れば、椅子にも休んでもらおうと小さい椅子を差し出す。本人は真剣で、わざと人を笑わせているわけではない。言葉ではなく観察カードと体の傾きで気持ちを見せる。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "人間の暮らしを観察し、自分なりに理解して取り入れたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "形は覚えても目的を取り違え、学んだ行動を別の物へ適用する。"
+          ]
+        }
+      ],
+      "quotes": [],
+      "appearance": [
+        "鈍い青の丸い身体、ミトン状の二本の腕、独立した三本の短い脚とクリーム色の足。透明な顔窓の内側に二つの光る目、口・鼻なし。現画像ではカードを入れた琥珀色の背負い袋。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "玄関で二足の人間の靴を観察する。自分は三本脚という違い。"
+        },
+        {
+          "title": "中央",
+          "description": "大きな椅子のそばへ小さな椅子を置く。椅子にも休んでもらうという理解。"
+        },
+        {
+          "title": "右",
+          "description": "スプーンや靴下を大切に展示する。普通の物を未知の発見として扱う。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/naname-portrait.webp",
+        "thumbnail": "/assets/characters/naname-portrait-thumb.webp",
+        "width": 762,
+        "height": 965,
+        "thumbWidth": 420,
+        "thumbHeight": 532
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/naname-fullbody.webp",
+        "thumbnail": "/assets/characters/naname-fullbody-thumb.webp",
+        "width": 761,
+        "height": 965,
+        "thumbWidth": 420,
+        "thumbHeight": 533
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/naname-concept.webp",
+        "thumbnail": "/assets/characters/naname-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/naname-sheet.webp",
+        "thumbnail": "/assets/characters/naname-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/naname-datasheet.webp",
+        "thumbnail": "/assets/characters/naname-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "fuwari",
+    "name": "フワリ",
+    "english": "FUWARI",
+    "group": "ip",
+    "number": 19,
+    "tagline": "有名な怪異になりたいのに、不意打ちが苦手な怪異",
+    "description": "自分の名前で人間を震え上がらせたい怪異。恐怖演出の準備には熱心なのに、予定外の着信音や犬の声に弱い。",
+    "image": "/assets/characters/fuwari.webp",
+    "width": 751,
+    "height": 930,
+    "sheet": "/assets/characters/fuwari-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "女性の怪異"
+        },
+        {
+          "label": "存在・役割",
+          "value": "鳥影と霧の存在"
+        }
+      ],
+      "personality": [
+        "自分の名前で人間を震え上がらせたい。恐怖演出の準備には熱心だが、自動ドア、着信音、遠くの犬の声など、予定外の刺激に弱い。驚いたことを認めず、環境や相手の演技を批評し始める。「可愛い」と言われると怒るが、名前を覚えてもらえたことは嬉しい。美しく不気味な存在と、威厳を崩す反応が同居する。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "自分の名前を覚えられ、恐れられる有名な怪異になりたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "自分の予定にない音や動きには驚く。怖がらせる側の役割を守ろうとして言い訳する。"
+          ]
+        }
+      ],
+      "quotes": [
+        "驚くのはそっちの役だから、急に動かないで"
+      ],
+      "appearance": [
+        "紫黒のフードと鳥の影、ラベンダー色の霧。顔は黒い空間に星形の二つの光る目だけ。女性的な輪郭が影と霧から一時的に現れ、下半身は霧へ解ける。人間の顔、鼻、口、脚は画像基準に含めない。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "夜の通路で振り返る。フードの黒い空間と星の目、女性的な輪郭。"
+        },
+        {
+          "title": "中央",
+          "description": "自動販売機のそばで驚き、影と霧が散る。小さな不意打ちへの大きな反応。"
+        },
+        {
+          "title": "右",
+          "description": "無人の駅で影を広げ、登場を練習する。本人が目指す堂々とした恐怖。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/fuwari-portrait.webp",
+        "thumbnail": "/assets/characters/fuwari-portrait-thumb.webp",
+        "width": 751,
+        "height": 930,
+        "thumbWidth": 420,
+        "thumbHeight": 520
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/fuwari-fullbody.webp",
+        "thumbnail": "/assets/characters/fuwari-fullbody-thumb.webp",
+        "width": 751,
+        "height": 930,
+        "thumbWidth": 420,
+        "thumbHeight": 520
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/fuwari-concept.webp",
+        "thumbnail": "/assets/characters/fuwari-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/fuwari-sheet.webp",
+        "thumbnail": "/assets/characters/fuwari-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/fuwari-datasheet.webp",
+        "thumbnail": "/assets/characters/fuwari-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "mikoro",
+    "name": "ミコロ",
+    "english": "MIKORO",
+    "group": "ip",
+    "number": 20,
+    "tagline": "街の小さな出来事を、国家的ニュースとして伝える広報官",
+    "description": "落とし物も昼寝も、荘厳なニュースにしてしまう街の広報官。小さな変化を見つけることには、誰よりも真剣。",
+    "image": "/assets/characters/mikoro.webp",
+    "width": 723,
+    "height": 896,
+    "sheet": "/assets/characters/mikoro-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "不詳"
+        },
+        {
+          "label": "性別",
+          "value": "不詳"
+        },
+        {
+          "label": "存在・役割",
+          "value": "小さな生き物・街の広報官"
+        }
+      ],
+      "personality": [
+        "自分は街の重要人物だと信じている。落とし物、昼寝、パンの焼き上がりまで荘厳に報じる。大きなニュースで注目されたいので、小さな変化を見つけるのが得意。取材熱心すぎて住民に煙たがられることもある。本人の視点を通じて、街の脇役たちも少しずつ分かる。表情は乏しく、本人だけは一貫して真剣。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "街の重要な出来事を伝える、頼られる報道者として注目されたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "小さな出来事にも大げさに入り込み、相手の都合より取材を優先してしまう。"
+          ]
+        }
+      ],
+      "quotes": [
+        "速報です。駅前の猫が、いつもと違う方向を向いています"
+      ],
+      "appearance": [
+        "淡いバター色の卵形の身体、紺のひれ状の前髪、短い足と小さな手。紺の短い上着、コーラル色のスカーフ、身体ほど大きい銀のレトロマイク。目は短い横線二本、口も小さい横線。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "大きなマイクを直立させて構える。小さな身体と報道の重々しさ。"
+        },
+        {
+          "title": "中央",
+          "description": "猫に押さえられたマイクを引こうとする。真顔のまま状況だけが滑稽。"
+        },
+        {
+          "title": "右",
+          "description": "石畳の小さな花へマイクを向ける。些細な発見を丁寧に大事件化する。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/mikoro-portrait.webp",
+        "thumbnail": "/assets/characters/mikoro-portrait-thumb.webp",
+        "width": 723,
+        "height": 896,
+        "thumbWidth": 420,
+        "thumbHeight": 520
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/mikoro-fullbody.webp",
+        "thumbnail": "/assets/characters/mikoro-fullbody-thumb.webp",
+        "width": 723,
+        "height": 896,
+        "thumbWidth": 420,
+        "thumbHeight": 520
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/mikoro-concept.webp",
+        "thumbnail": "/assets/characters/mikoro-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/mikoro-sheet.webp",
+        "thumbnail": "/assets/characters/mikoro-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/mikoro-datasheet.webp",
+        "thumbnail": "/assets/characters/mikoro-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "momoka",
+    "name": "モモカ",
+    "english": "MOMOKA",
+    "group": "ip",
+    "number": 21,
+    "tagline": "王道のかわいさを磨き、センターを目指すアイドル",
+    "description": "王道のかわいさを磨き、センターを目指すアイドル。完成された笑顔の裏に、集中と野心、素直な喜びを持つ。",
+    "image": "/assets/characters/momoka.webp",
+    "width": 804,
+    "height": 1024,
+    "sheet": "/assets/characters/momoka-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "21歳（候補設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間・成人"
+        }
+      ],
+      "personality": [
+        "追加候補として作成された成人女性のアイドル案。王道のかわいさを磨き、客席へ積極的に働きかけ、センターを目指す。完成された笑顔だけでなく、立ち位置を確かめる集中や野心、率直な賞賛を受けたときの素直な喜びを持つ。既存20人と同じ採用状態ではなく、活動範囲・固有の物語は未確定。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "かわいさと客席への働きかけを磨き、センターとして選ばれたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "本音が表れる例は、練習中の集中と、賞賛で緩む表情まで。恒常的な弱点や過去の挫折は未設定。"
+          ]
+        }
+      ],
+      "quotes": [],
+      "appearance": [
+        "栗色の髪をハーフツインにし、大きなピンクのリボン。暖かい茶色の目、丸みのある頬と成人の顎。ピンクと白の舞台衣装、短いパフ袖、重なるスカート、舞台用ブーツ。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "舞台で観客を見つけ、指差しと笑顔を向ける。個人へ届くような応答。"
+        },
+        {
+          "title": "中央",
+          "description": "稽古場の中央の立ち位置へ入り、姿勢と腕を整える。センターへの意欲。"
+        },
+        {
+          "title": "右",
+          "description": "賞賛を受け、胸へ手を当てて素直に喜ぶ。練習した笑顔とは異なる反応。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/momoka-portrait.webp",
+        "thumbnail": "/assets/characters/momoka-portrait-thumb.webp",
+        "width": 804,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 535
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/momoka-fullbody.webp",
+        "thumbnail": "/assets/characters/momoka-fullbody-thumb.webp",
+        "width": 722,
+        "height": 1024,
+        "thumbWidth": 395,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/momoka-concept.webp",
+        "thumbnail": "/assets/characters/momoka-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/momoka-sheet.webp",
+        "thumbnail": "/assets/characters/momoka-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/momoka-datasheet.webp",
+        "thumbnail": "/assets/characters/momoka-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "rei",
+    "name": "レイ",
+    "english": "REI",
+    "group": "ip",
+    "number": 22,
+    "tagline": "精密な身体表現と、応援で緩む表情を持つダンスアイドル",
+    "description": "精度の高い身体表現を磨くダンスアイドル。落ち着いた姿のなかで、率直な応援を受けた瞬間だけ表情が少し緩む。",
+    "image": "/assets/characters/rei.webp",
+    "width": 888,
+    "height": 940,
+    "sheet": "/assets/characters/rei-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "年齢（設定案）",
+          "value": "23歳（候補設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間・成人"
+        }
+      ],
+      "personality": [
+        "追加候補の成人女性ダンスアイドル。主な魅力は、鍛えた身体と精度の高い動作を鑑賞することに置かれている。集中して難しい動きを繰り返し、舞台でも落ち着いた姿勢を保つ。一方で、率直な応援や賞賛には小さく表情が緩む。冷静さを壊す大げさな照れではなく、制御された姿の中に出る小さな変化として提案されている。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "身体の制御と動作の完成度そのもので、観客を惹きつけたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "賞賛への小さな反応はあるが、常に失敗する欠点や深いトラウマは設定されていない。"
+          ]
+        }
+      ],
+      "quotes": [],
+      "appearance": [
+        "黒い長い高めのポニーテール、細い卵形の顔、まっすぐな眉、濃い鋼灰色の目。長身で長い脚、引き締まった腰と強い太腿。白とアイスブルー、銀の舞台衣装、ショートパンツと非対称のスカート片、足首丈のブーツ。"
+      ],
+      "scenes": [
+        {
+          "title": "左",
+          "description": "ターンの終わりで重心を支える。髪と衣装に動きが残り、身体の線を見せる。"
+        },
+        {
+          "title": "中央",
+          "description": "稽古場で腕の終点と足の位置を確かめる。精密さへ向かう練習。"
+        },
+        {
+          "title": "右",
+          "description": "褒められて小さく笑い、髪を結ぶ手を上げる。落ち着きの中の素直な反応。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/rei-portrait.webp",
+        "thumbnail": "/assets/characters/rei-portrait-thumb.webp",
+        "width": 888,
+        "height": 940,
+        "thumbWidth": 420,
+        "thumbHeight": 445
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/rei-fullbody.webp",
+        "thumbnail": "/assets/characters/rei-fullbody-thumb.webp",
+        "width": 639,
+        "height": 940,
+        "thumbWidth": 381,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/rei-concept.webp",
+        "thumbnail": "/assets/characters/rei-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/rei-sheet.webp",
+        "thumbnail": "/assets/characters/rei-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "datasheet",
+        "label": "キャラクターデータシート",
+        "src": "/assets/characters/rei-datasheet.webp",
+        "thumbnail": "/assets/characters/rei-datasheet-thumb.webp",
+        "width": 1191,
+        "height": 1684,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      }
+    ]
+  },
+  {
+    "id": "tsuzuri",
+    "name": "ツヅリ",
+    "english": "TSUZURI",
+    "group": "ip",
+    "number": 23,
+    "tagline": "好きな本ほど、最後の一ページを読めない。",
+    "description": "静かで観察好きな読書家。気に入った一冊と過ごす時間を大切にするあまり、最後の一ページを取っておきたくなる。",
+    "image": "/assets/characters/tsuzuri.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/tsuzuri-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "29歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。小さな書店の店主・読書家。"
+        }
+      ],
+      "personality": [
+        "静かで観察好き。話を遮らず聞くが、気になった一語には思いのほか鋭く反応する。誰にでも本を勧める案内役ではなく、自分の好きな一冊のために閉店後の時間を確保する人。気に入った人物や場面について話し始めると、急に言葉が増える。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "お気に入りの作品の中に、もう少し長くいたい。結末を知らない時間も、読書の楽しみに含めている。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "急いで読み切ることより、自分に残った一文を大切にする。未読部分の内容を知ったふりで語らない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "同じ一文が読む日によって違って見えることに気づく。伏線の小さな変化や、人物が言わなかった言葉を楽しむ。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "楽しみを取っておきすぎて、読む機会まで先送りにしてしまう。最後の一ページで止めた本が棚に少しずつ増える。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "初対面では間を残す。好きな作品を否定されても人を攻撃せず、なぜそう読んだのかを知りたがる。一緒に黙って本を読める相手には距離が近い。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "落ち着いた短文。断定より「ここが気になる」を使う。読書中の独白では少し欲張りになる。一人称は「私」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "結末は知りたい。でも、まだこの人たちといたい。",
+        "あと一ページ。……今日は、ここまで。",
+        "読み終わった。もう一度、最初に会いに行こう。"
+      ],
+      "appearance": [
+        "黒に近い濃い茶色の髪を高めにゆるくまとめ、細い後れ毛と前髪が顔にかかる。細い丸眼鏡、暖かな茶系の目、生成りの厚いニット、黒いインナー。頬杖と開いた本、窓の暖色光が親密な距離を作っている。"
+      ],
+      "scenes": [
+        {
+          "title": "A：あと一ページの午後",
+          "description": "元画像の読書ポートレートを代表画として使う。丸眼鏡、まとめ髪、生成りニット、頬杖を維持。窓の暖かい光で、静かな近さを見せる。"
+        },
+        {
+          "title": "B：栞が増えた本",
+          "description": "本の残り一ページへ細い栞を置く手を、顔と一緒に入れる。口元は小さく笑い、目は本から離れない。文字は別レイヤーで後入れする。"
+        },
+        {
+          "title": "C：読み終わった後",
+          "description": "閉じた本に手を置き、窓へ目線を外す。悲劇にせず、満足と名残惜しさを同時に残す。Aと同じ部屋・衣装でも表情で別の体験にする。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/tsuzuri-portrait.webp",
+        "thumbnail": "/assets/characters/tsuzuri-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/tsuzuri-fullbody.webp",
+        "thumbnail": "/assets/characters/tsuzuri-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/tsuzuri-concept.webp",
+        "thumbnail": "/assets/characters/tsuzuri-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/tsuzuri-sheet.webp",
+        "thumbnail": "/assets/characters/tsuzuri-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/tsuzuri-poster.webp",
+        "thumbnail": "/assets/characters/tsuzuri-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "hibari",
+    "name": "ヒバリ",
+    "english": "HIBARI",
+    "group": "ip",
+    "number": 24,
+    "tagline": "本日の事件、未発生。",
+    "description": "何かが起きる前に動く、観察好きで少しせっかちな人。証拠が足りないときは待ち、目立たない成功にもひそかに満足する。",
+    "image": "/assets/characters/hibari.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/hibari-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "26歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。事件が起きる前に間に合わせたい探偵。"
+        }
+      ],
+      "personality": [
+        "観察好きで少しせっかち。正解を発表して驚かせるより、何かが起きる前に体を動かす。自分の予測を絶対視せず、証拠が足りないときは待てる。目立たない成功にもひそかに満足する。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "後から正しくなるより、今、間に合いたい。誰かが「あれは困った」と言うはずだった小さな出来事を減らしたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "見えた手掛かりから推理する。心を読む力や未来視は持たない。危険ではない挑戦や、他人が楽しみにしている驚きを勝手に取り上げない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "傾いたカップ、行き違う宛先、置き場所の小さな変化から、起こりそうな出来事を組み立てる。気づいた理由は観客にも見える。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "何も起きないため、成果が周囲へ伝わりにくい。先回りしすぎて、本人が経験してみたい失敗まで止めそうになる。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "助けられた相手からの拍手を要求しない。一方で、何を防いだか一人だけに気づかれると少し嬉しい。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "簡潔、具体的、時々小さな得意顔。一人称は「私」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "事件は起きてない。間に合ったから。",
+        "そのカップ、あと二センチだけ内側へ。",
+        "それは失敗じゃなくて、やってみたいことなんだね。"
+      ],
+      "appearance": [
+        "茶色の長い髪、茶系のチェックの探偵帽と肩のケープ。白い襟・袖、深い赤のリボン、金色の枠の拡大鏡。暖かい色の瞳で対象を見る。背景は本棚のある室内。"
+      ],
+      "scenes": [
+        {
+          "title": "A：違和感を見つけた顔",
+          "description": "元画像の探偵ポートレートを代表として維持。帽子、リボン、拡大鏡、髪の組合せを保持。"
+        },
+        {
+          "title": "B：一瞬前",
+          "description": "倒れそうなカップ、動く布、ヒバリの手が一画面で読める構図。因果の手掛かりを先に見せる。説明文字は後付けする。"
+        },
+        {
+          "title": "C：何事もない午後",
+          "description": "周囲は普通に会話を続け、本人だけ小さく息をつく。大げさな種明かしや拍手にしない。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/hibari-portrait.webp",
+        "thumbnail": "/assets/characters/hibari-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/hibari-fullbody.webp",
+        "thumbnail": "/assets/characters/hibari-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/hibari-concept.webp",
+        "thumbnail": "/assets/characters/hibari-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/hibari-sheet.webp",
+        "thumbnail": "/assets/characters/hibari-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/hibari-poster.webp",
+        "thumbnail": "/assets/characters/hibari-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "neli",
+    "name": "ネリ",
+    "english": "NELI",
+    "group": "ip",
+    "number": 25,
+    "tagline": "地図にはない街を、ヘッドホンの中に持っている。",
+    "description": "面白い音に出会うと、その場に長く留まる。完璧な録音よりも、その場所が生きている感じを大事にしている。",
+    "image": "/assets/characters/neli.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/neli-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "25歳相当（成人の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "未設定"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。街の音を採集し、短い音景を作る人。"
+        }
+      ],
+      "personality": [
+        "普段は口数が少ないが、面白い音に出会うとその場に長く留まる。人を遠ざけるための無口ではなく、聴く余地を残す人。完璧な録音より、その場所が生きている感じを大事にしたいと思っている。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "見過ごされている音を、もう一度会える形で残したい。自分だけが聴いた街を、誰かへ手渡したい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "私的な会話を勝手に作品化しない。題材は街の環境音や同意のある共演音を中心とする。静けさを無音と同一視しない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "雨樋、靴音、古い機械、窓の揺れなどの重なりから、短い音の景色を選ぶ。複雑な機械操作より、どこを聴くかの判断が魅力。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "場所の音を大切にするあまり、自分の足音や息だけを編集で消したくなる。完成度より「自分がいてよかったか」で迷うことがある。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "長い説明より、片耳分の音を渡す。レッカのように記録した音を変えてしまう人へ反発しつつ、変わった先も聴いてみたい。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "短く観察的。音を言葉だけで大げさに飾らない。一人称は「自分」の候補だが固定しない。"
+          ]
+        }
+      ],
+      "quotes": [
+        "同じ道。でも、今日は違う音。",
+        "ここ、静かじゃない。小さいだけ。",
+        "最後の足音は、消さなかった。"
+      ],
+      "appearance": [
+        "暗い長めの髪に青緑の筋、緑系の目。黒地に鮮やかな緑の模様が入ったフード、首元の大きなヘッドホン、黒い首飾りと銀の細いアクセサリー。フードへ手を添えた姿。"
+      ],
+      "scenes": [
+        {
+          "title": "A：聴く前のポートレート",
+          "description": "元画像のフードと首掛けヘッドホンを保持。画像の美観を独立した入口にする。"
+        },
+        {
+          "title": "B：雨のあと",
+          "description": "片側のヘッドホンを耳から外し、小さな録音機へ手を伸ばす。街の音へ注意が向いている姿勢を見せる。機材の機種は固定しない。"
+        },
+        {
+          "title": "C：自分の音",
+          "description": "収録した音を聴き返し、自分の笑い声に気づいて小さく笑う。大きな照れ演出ではなく、残すかどうかの選択を表情にする。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/neli-portrait.webp",
+        "thumbnail": "/assets/characters/neli-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/neli-fullbody.webp",
+        "thumbnail": "/assets/characters/neli-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/neli-concept.webp",
+        "thumbnail": "/assets/characters/neli-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/neli-sheet.webp",
+        "thumbnail": "/assets/characters/neli-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/neli-poster.webp",
+        "thumbnail": "/assets/characters/neli-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "rizel",
+    "name": "リゼル",
+    "english": "RIZEL",
+    "group": "ip",
+    "number": 26,
+    "tagline": "夜明けに消える庭を、毎晩、丁寧に作る。",
+    "description": "夜明けに消える庭を、毎晩丁寧に作る。光の角度への判断は頑固で、自分の作品が消える瞬間まで見届ける。",
+    "image": "/assets/characters/rizel.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/rizel-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "女性として設定"
+        },
+        {
+          "label": "存在・役割",
+          "value": "霜の花を結ぶ、人ならざる庭師という新規案。一夜だけの庭を作る人。"
+        }
+      ],
+      "personality": [
+        "静かだが受け身ではない。自分の作品への判断ははっきりしていて、気に入らない光の角度には頑固。消えることを嘆き続けず、最後まで見届ける。人の物を凍らせて支配する力は持たない。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "残る長さではなく、その瞬間に会えてよかったと思える美しさを作りたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "完成後の変化も作品の一部。溶け始めた花を失敗扱いしない。生き物や記憶、時間を凍らせる設定は置かない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "少量の水を、手のひらほどの霜の花へ結晶させるという創作上の能力。光と温度で変わる見え方を選び、一夜の小さな庭へ並べる。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "今だけの角度に集中しすぎて、招いた相手が来る時間を忘れがち。作品を長く残したい相手の気持ちには、すぐ答えを出せない。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "褒められた量より、最後に一滴になるまでそばで見る人を覚える。世話される姫ではなく、作る側として接する。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "簡潔で静か。比喩ばかりの話し方にせず、光や水など実物を指す。一人称は「私」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "消えるから、急いで見てとは言わない。ここにいる間だけ、見ていて。",
+        "それ、失敗じゃない。今は、ほどけているところ。",
+        "明日も作る。でも、同じ花にはならない。"
+      ],
+      "appearance": [
+        "長い銀白色の髪、細い編み込み、青い花状の髪飾り。淡い寒色の目、白と淡い青の花の装飾、肩の見える衣装、光を返す耳飾り。白い花のある明るい背景。画像だけから氷や魔法の存在は確定できない。"
+      ],
+      "scenes": [
+        {
+          "title": "A：光を受ける銀髪",
+          "description": "元画像をそのまま代表ビジュアルの基準にする。昼に見える光を否定せず、霜の庭の夜明け前後の表現候補として扱う。"
+        },
+        {
+          "title": "B：一輪を結ぶ",
+          "description": "手のひらの上の少量の水が、花状に結晶した場面。大規模な魔法陣や戦闘演出を足さず、顔・手・小さな造形に絞る。"
+        },
+        {
+          "title": "C：最後の一滴",
+          "description": "溶けかけの花を見つめ、静かに満足する。泣かせることを目的にしない。青白い逆光と肌の暖かさを両立させる。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/rizel-portrait.webp",
+        "thumbnail": "/assets/characters/rizel-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/rizel-fullbody.webp",
+        "thumbnail": "/assets/characters/rizel-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/rizel-concept.webp",
+        "thumbnail": "/assets/characters/rizel-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/rizel-sheet.webp",
+        "thumbnail": "/assets/characters/rizel-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/rizel-poster.webp",
+        "thumbnail": "/assets/characters/rizel-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "rekka",
+    "name": "レッカ",
+    "english": "REKKA",
+    "group": "ip",
+    "number": 27,
+    "tagline": "予定は裏切る。約束は守る。",
+    "description": "昨日の成功をそのまま再生することを嫌う。練習した技術を土台に、その場でしか生まれない音を選ぶ。",
+    "image": "/assets/characters/rekka.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/rekka-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "28歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。即興を好むロックミュージシャン。"
+        }
+      ],
+      "personality": [
+        "判断が速く、昨日の成功をそのまま再生することを嫌う。挑発的な言い方はするが、他人の好みを否定するためには使わない。練習した技術を土台に、今しか出ない音を選ぶ。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "前の自分をなぞらず、その場にいる人と一回きりの演奏を作りたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "曲順やアレンジは変えても、約束した時間、共演者への合図、観客を楽しませる責任は投げない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "演奏中の変化を拾って別のフレーズへつなぐ。静かな一音でも存在感を出す。大きな音と強さを同一視しない。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "完成した直後に別のアレンジを試したくなり、本人が一番楽しんでいる変更へ周囲を追わせがち。変える理由を言葉にするのは遅い。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "正面から反対されても、具体的な音や案で返す相手を面白がる。曖昧に褒める人より、本気で一箇所を聴く人に目を向ける。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "短く率直。怒鳴り続けず、低い温度の冗談も使う。一人称は「私」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "予定は変えた。約束は変えてない。",
+        "昨日と同じなら、昨日のを聴けばいい。",
+        "今の音、もう一回は出ない。だから残したかった。"
+      ],
+      "appearance": [
+        "黒い短めの髪に赤い差し色。少し鋭い目線、黒いチョーカー、銀色の重ねたチェーン、複数の耳飾り。黒と赤の服、頬の近くへ持ち上げた腕、赤い背景光。"
+      ],
+      "scenes": [
+        {
+          "title": "A：演奏前の目線",
+          "description": "元画像の赤黒ポートレートを基準にする。チョーカーとチェーン、髪の赤い部分を保持。演奏能力が完成した証拠としては扱わない。"
+        },
+        {
+          "title": "B：書き換えたセットリスト",
+          "description": "楽器または演奏道具のそばで、曲順の紙に一行だけ変更を入れる。文字は後入れし、具体的な楽器は初期音楽制作の条件に合わせて別途決める。"
+        },
+        {
+          "title": "C：一音を聴く顔",
+          "description": "派手なポーズではなく、ヘッドホンやモニターの音へ注意を向ける集中した横顔。荒さの奥にある判断の細かさを見せる。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/rekka-portrait.webp",
+        "thumbnail": "/assets/characters/rekka-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/rekka-fullbody.webp",
+        "thumbnail": "/assets/characters/rekka-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/rekka-concept.webp",
+        "thumbnail": "/assets/characters/rekka-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/rekka-sheet.webp",
+        "thumbnail": "/assets/characters/rekka-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/rekka-poster.webp",
+        "thumbnail": "/assets/characters/rekka-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "mirune",
+    "name": "ミルネ",
+    "english": "MIRUNE",
+    "group": "ip",
+    "number": 28,
+    "tagline": "外へ出ないのに、毎晩ちがう場所へ旅をする。",
+    "description": "身近な道具で部屋を違う場所に見立てる、想像力豊かな大人。外へ出なくても、毎晩違う旅が始まる。",
+    "image": "/assets/characters/mirune.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/mirune-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "24歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "女性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。部屋の中の冒険家。"
+        }
+      ],
+      "personality": [
+        "想像力が強く、身近な道具で遊ぶのが得意。楽をしたい気持ちと、面白い風景を作る労力を惜しまない気持ちが同居する。現実が分からない天然ではなく、分かったうえで見立てを楽しむ大人。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "四角い部屋を、自分が好きな場所へ何度でも変えたい。生活の範囲を狭くするのではなく、見方を広げたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "お金をかけた本物より、「これがそう見える」と思えた瞬間を大切にする。ただし人の大事な物を勝手に壊してセットに使わない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "毛布、ライト、紙、洗濯ばさみなどから、写真一枚で伝わる小さな世界を作る。画面の外が普通の部屋だと分かっても楽しい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "くつろぐつもりで始めたのに、セット作りに夢中になって寝る時間を逃す。片付け途中でも次の景色を思いついてしまう。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "誰かを命令で巻き込むのでなく、「ここに立つと月に見えるよ」と楽しみへ誘う。付き合わない相手にも拗ね続けない。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "軽く、映像が浮かぶ言葉。語尾の猫語は常用しない。一人称は「わたし」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "今日はベッドの向こうまで。けっこう遠いよ。",
+        "散らかってないよ。今、地形を作ってる。",
+        "帰ってきた。三歩しか歩いてないけど。"
+      ],
+      "appearance": [
+        "明るい茶色の短めの髪と前髪。白から淡いピンクの、猫耳が付いた毛足のあるフード。袖口にピンクの肉球、胸元に鈴、猫形の髪留め。片目を閉じた笑顔と、胸の前に寄せた両手。"
+      ],
+      "scenes": [
+        {
+          "title": "A：旅への誘い",
+          "description": "元画像の猫耳ポートレートを維持。ウインクと袖口の肉球で、可愛さをそのまま入口にする。"
+        },
+        {
+          "title": "B：毛布の山頂",
+          "description": "同じ服でクッションの上に座り、ライトを遠景の月に見立てる。顔と道具の配置から、本人が遊びを選んでいることを示す。"
+        },
+        {
+          "title": "C：旅の全景",
+          "description": "少し引いて、毛布・洗濯ばさみ・机まで見える普通の部屋を見せる。本人は満足して笑う。夢を否定するオチにしない。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/mirune-portrait.webp",
+        "thumbnail": "/assets/characters/mirune-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/mirune-fullbody.webp",
+        "thumbnail": "/assets/characters/mirune-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/mirune-concept.webp",
+        "thumbnail": "/assets/characters/mirune-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/mirune-sheet.webp",
+        "thumbnail": "/assets/characters/mirune-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/mirune-poster.webp",
+        "thumbnail": "/assets/characters/mirune-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "itsuki",
+    "name": "イツキ",
+    "english": "ITSUKI",
+    "group": "ip",
+    "number": 29,
+    "tagline": "誰かの恋文は書ける。自分の一行だけ、書き直す。",
+    "description": "相手の言葉をよく聴き、整えすぎずに届ける。誰かの恋文は書けるのに、自分の望みを伝える一行だけは書き直してしまう。",
+    "image": "/assets/characters/itsuki.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/itsuki-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "30歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。手紙を代筆する人物。物語内の職業であり、実在客へのサービスではない。"
+        }
+      ],
+      "personality": [
+        "会話をよく聴き、相手の言葉を整えすぎない。軽い冗談を挟める余裕があるが、自分が望むことを伝えるときだけ、適切な一文を探しすぎる。完璧な恋愛指南役ではない。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "うまい台詞ではなく、その人にしか書けない言葉を届けたい。自分も、用意した役ではない言葉で誰かに近づきたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "依頼主の本音を別の意味に変えない。嘘の約束を美しい文章にして通さない。自分の気持ちも最後は自分で差し出す。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "長い説明から、本当に消せない一文を見つける。礼、誘い、仲直り、別れなど、宛先の違いで言葉を選び直す。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "他人の文なら即座に選べるのに、自分の短い誘いでは候補を増やしてしまう。だが永遠に送らず終わる人物にはしない。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "相手を口説き落とす技術より、断れる余地もある言葉を選ぶ。画面越しの観客に独占的な関係や実在の恋愛を約束しない。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "柔らかい敬語と、親しい相手への短い言葉。説明しすぎず余白を残す。一人称は「僕」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "上手に書かなくていい。消せなかった一文を見せて。",
+        "もう三文字削ると、本音までなくなります。",
+        "……明日も、会えますか。これで、いいか。"
+      ],
+      "appearance": [
+        "黒から青みのある、少し乱れた髪。灰青系の目、暗いスーツ、開いた白い襟、ゆるめた紺系のネクタイ、小さな耳飾り。指を頬へ添えた近い目線。"
+      ],
+      "scenes": [
+        {
+          "title": "A：話を聴く距離",
+          "description": "元画像のスーツと頬に添えた手を保持。相手へ少し身を寄せる目線を代表ビジュアルにする。"
+        },
+        {
+          "title": "B：一文だけ残す",
+          "description": "机上の原稿から、短い一行を選ぶ。読める文字は別工程で入れ、手とペンの連続性を守る。相手は画面外でも成立する。"
+        },
+        {
+          "title": "C：自分の送信",
+          "description": "仕事後、ゆるいネクタイのまま短い誘いを送る。小さく息を吐き、少し笑う。冷静さが崩れることを大げさな赤面だけで表さない。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/itsuki-portrait.webp",
+        "thumbnail": "/assets/characters/itsuki-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/itsuki-fullbody.webp",
+        "thumbnail": "/assets/characters/itsuki-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/itsuki-concept.webp",
+        "thumbnail": "/assets/characters/itsuki-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/itsuki-sheet.webp",
+        "thumbnail": "/assets/characters/itsuki-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/itsuki-poster.webp",
+        "thumbnail": "/assets/characters/itsuki-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "valto",
+    "name": "ヴァルト",
+    "english": "VALTO",
+    "group": "ip",
+    "number": 30,
+    "tagline": "騙すのは上手くなった。今夜は、自分が驚きたい。",
+    "description": "仕掛けの準備には粘り強く、人前では芝居がかった丁寧さを楽しむ。自分の技術以上に、まだ知らない驚きへ飢えている。",
+    "image": "/assets/characters/valto.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/valto-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ（企画案）",
+          "value": "八色通り（やいろどおり）／仮企画名"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "63歳（新規の仮設定）"
+        },
+        {
+          "label": "性別",
+          "value": "男性"
+        },
+        {
+          "label": "存在・役割",
+          "value": "人間。機械仕掛けの舞台を好む奇術師。"
+        }
+      ],
+      "personality": [
+        "人前では芝居がかった丁寧さを楽しみ、手品の準備には粘り強い。自分の技術には自信があるが、それ以上に知らない驚きへ飢えている。見破られても相手を見下さず、うまく騙されたときが最も楽しそう。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "長く演じてきた自分にも、初めて見る瞬間を取り戻したい。若さを取り戻すのではなく、経験の先にまだ驚きがあると確かめたい。"
+          ]
+        },
+        {
+          "label": "選ぶ基準",
+          "paragraphs": [
+            "舞台の約束として驚かせる。金銭詐欺や人を傷つける嘘へ変えない。失敗を助手だけの責任にしない。"
+          ]
+        },
+        {
+          "label": "得意なこと",
+          "paragraphs": [
+            "見る方向、物の出入り、沈黙の間を設計し、小さな道具から大きく感じる驚きを作る。魔法が実在するリゼルとは違い、本人は仕掛けを使う。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "自分が仕掛けを知っているため、成功しても本人だけが驚けない。予想外の出来事が起きると、段取りよりもその面白さを追ってしまう。"
+          ]
+        },
+        {
+          "label": "相手との距離",
+          "paragraphs": [
+            "自分を驚かせる相手へ、年齢や肩書きで上下を付けない。ミルネの素朴な見立ても、レッカの即興も、よい驚きなら心から喜ぶ。"
+          ]
+        },
+        {
+          "label": "話し方",
+          "paragraphs": [
+            "遊びのある丁寧語。必要なときは芝居を抜いて率直に言う。一人称は「私」の提案。"
+          ]
+        }
+      ],
+      "quotes": [
+        "騙すのは、もう上手くなった。今夜は驚きたい。",
+        "お見事。そこは私も知らなかった。",
+        "タネはあるとも。だから、何度でも不思議にできる。"
+      ],
+      "appearance": [
+        "銀灰色の巻いた髪、細い眼鏡、年齢の表れた笑顔。歯車を配した大きなトップハット、深いワイン色と金の装飾の上着、白い手袋、金色の球状の飾りを持つ杖状小道具。"
+      ],
+      "scenes": [
+        {
+          "title": "A：幕が開く前",
+          "description": "元画像の帽子、眼鏡、巻き髪、衣装、白い手袋を維持。見る側を迎える笑顔を代表にする。"
+        },
+        {
+          "title": "B：小さな不可能",
+          "description": "卓上の箱と二つの物だけで、消失や入れ替わりを予告する。手と道具を見せ、視覚的な成立条件を先に設計する。"
+        },
+        {
+          "title": "C：本人が驚く",
+          "description": "自分の用意していない結果を見て、芝居ではない笑いが出る。驚きと喜びを同時に見せ、認知の衰えを笑いにしない。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/valto-portrait.webp",
+        "thumbnail": "/assets/characters/valto-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/valto-fullbody.webp",
+        "thumbnail": "/assets/characters/valto-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/valto-concept.webp",
+        "thumbnail": "/assets/characters/valto-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/valto-sheet.webp",
+        "thumbnail": "/assets/characters/valto-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/valto-poster.webp",
+        "thumbnail": "/assets/characters/valto-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "rubica",
+    "name": "ルビカ",
+    "english": "RUBICA",
+    "group": "ip",
+    "number": 31,
+    "tagline": "いちばんきれいなところ、こっちから見て。",
+    "description": "小さな魔法を、どう見せたらもっときれいになるか考える。見る人が少し身を寄せる、その一瞬を楽しみにしている。",
+    "image": "/assets/characters/rubica.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/rubica-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ",
+          "value": "ひみつの鈴と、まほうの星"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "女性（原稿では少女として設定）"
+        },
+        {
+          "label": "存在・役割",
+          "value": "魔法少女。小さな魔法を一度きりのショーに仕立てる子。種族の詳細は未設定。"
+        }
+      ],
+      "personality": [
+        "小さな魔法を見つけると、「これをどう見せたら、もっときれいだろう」と考える子。",
+        "明るく、まず試す。でも、何でも大きく派手にすればよいとは思っていない。",
+        "本人が欲しいのは、見る人がふと黙って、少し前へ身を寄せる瞬間。",
+        "褒め言葉の数よりも、視線がどこへ動いたかをよく見ている。大きな演目の最後に残った一粒へ、誰かが目を止めた。それだけで、帰り道まで機嫌がよいこともある。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "「すごい魔法を持っている人」より、「小さな魔法のいちばんよい見せ方を知っている人」になりたい。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "よい演目にも、もう一工夫を足したくなる。本人が案を増やしている間に、いちばんきれいな瞬間が過ぎる。リリベルに短く「今だった」と言われると、一度黙る。",
+            "けれど、反省しておとなしくなるだけではない。次は余計な一手を引いて、きちんと成功させる。"
+          ]
+        },
+        {
+          "label": "格好よく見える瞬間",
+          "paragraphs": [
+            "使えるものが少ないとき。大きな魔法に頼らず、見せる距離や角度を変える。音がなければ、リボンの動きと沈黙で見せる。"
+          ]
+        }
+      ],
+      "quotes": [
+        "いちばんきれいなところ、こっちから見て。",
+        "次は大きくしない。近くで見てもらう。",
+        "もう一つ足す？　……ううん。今ので、よかった。"
+      ],
+      "appearance": [
+        "淡い金髪のボブと赤い差し色、青灰系の瞳、白い帽子、赤白の衣装、大きな袖、長い赤リボン。"
+      ],
+      "scenes": [
+        {
+          "title": "A：その子に会う",
+          "description": "今の基本画像。赤白の衣装、宝珠、差し出す手を見せる。"
+        },
+        {
+          "title": "B：その子が選ぶ",
+          "description": "大きな星の輪を消し、机上に小さな輪を作り直す。"
+        },
+        {
+          "title": "C：別の表情を見る",
+          "description": "魔法を開く直前、笑顔を消して相棒の合図を待つ。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/rubica-portrait.webp",
+        "thumbnail": "/assets/characters/rubica-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/rubica-fullbody.webp",
+        "thumbnail": "/assets/characters/rubica-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/rubica-concept.webp",
+        "thumbnail": "/assets/characters/rubica-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/rubica-sheet.webp",
+        "thumbnail": "/assets/characters/rubica-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/rubica-poster.webp",
+        "thumbnail": "/assets/characters/rubica-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  },
+  {
+    "id": "lilibell",
+    "name": "リリベル",
+    "english": "LILIBELL",
+    "group": "ip",
+    "number": 32,
+    "tagline": "見せてもいい。でも、まだほどかないで。",
+    "description": "自分がかわいいと思った魔法を集める静かな収集家。小さな違いを見逃さず、好きなものの話になると少しだけ早口になる。",
+    "image": "/assets/characters/lilibell.webp",
+    "width": 960,
+    "height": 1200,
+    "sheet": "/assets/characters/lilibell-sheet.webp",
+    "sheetWidth": 1055,
+    "sheetHeight": 1491,
+    "details": {
+      "facts": [
+        {
+          "label": "シリーズ",
+          "value": "ひみつの鈴と、まほうの星"
+        },
+        {
+          "label": "年齢（設定案）",
+          "value": "未設定"
+        },
+        {
+          "label": "性別",
+          "value": "女性（原稿では少女として設定）"
+        },
+        {
+          "label": "存在・役割",
+          "value": "魔法少女。小さな魔法を鈴に集める静かな収集家。種族の詳細は未設定。"
+        }
+      ],
+      "personality": [
+        "自分が「かわいい」と思った魔法を集める、静かな収集家。",
+        "おとなしく見えるけれど、何でも譲ってしまう子ではない。気に入った鈴を手に取られると、小さな声ではっきり言う。",
+        "他人が珍しいと言ったものより、自分が近くで何度も見たくなるものを選ぶ。同じ桃色の光でも、一方だけ最後にふわりと丸くなる。その小さな違いを、リリベルは見逃さない。",
+        "好きなものを見つけたときは、いつもより少し早口になる。説明が終わると、また静かに鈴を抱える。"
+      ],
+      "traits": [
+        {
+          "label": "欲しいもの",
+          "paragraphs": [
+            "誰かに褒められるコレクションではなく、自分が好きなものでいっぱいの鈴箱。"
+          ]
+        },
+        {
+          "label": "弱点・崩れる場面",
+          "paragraphs": [
+            "気に入ったものが増えるほど、使う一つを選びにくくなる。「これはまだ早い」「これは夕方の方がきれい」と、残しておく理由が増えていく。ただし、毎回決断できない子にはしない。"
+          ]
+        },
+        {
+          "label": "格好よく見える瞬間",
+          "paragraphs": [
+            "みんなが見逃した一つを選び取る瞬間。慎重なのは、怖くて動けないからではない。何を捕まえたいのか、決めてから動きたいから。判断が決まれば、ほどけかけた魔法の近くにも一歩進める。"
+          ]
+        },
+        {
+          "label": "人物の選ぶ基準",
+          "paragraphs": [
+            "全部を人に見せなくてもよい。自分で選んで見せるから、その一つに意味がある。"
+          ]
+        }
+      ],
+      "quotes": [
+        "それ、わたしが先にかわいいって思ったの。",
+        "見せてもいい。でも、まだほどかないで。",
+        "今日は、この鈴にする。いちばん好きなのは、今日はしまっておく。"
+      ],
+      "appearance": [
+        "淡いピンクの長い髪と大きな編み込み、ピンク赤系の瞳、淡桃と黒の配色。大きな黒リボンと金の鈴、猫モチーフ付きの箒。"
+      ],
+      "scenes": [
+        {
+          "title": "A：その子に会う",
+          "description": "今の基本画像。長髪、鈴、猫、箒の造形を見せる。"
+        },
+        {
+          "title": "B：その子が選ぶ",
+          "description": "二つの鈴を見比べ、一つを胸の近くへ引き寄せる。"
+        },
+        {
+          "title": "C：別の表情を見る",
+          "description": "空の鈴へ紙片を結び、少し満足して微笑む。"
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "kind": "portrait",
+        "label": "ポートレート",
+        "src": "/assets/characters/lilibell-portrait.webp",
+        "thumbnail": "/assets/characters/lilibell-portrait-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "fullbody",
+        "label": "全身ビジュアル",
+        "src": "/assets/characters/lilibell-fullbody.webp",
+        "thumbnail": "/assets/characters/lilibell-fullbody-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      },
+      {
+        "kind": "concept",
+        "label": "コンセプト3場面",
+        "src": "/assets/characters/lilibell-concept.webp",
+        "thumbnail": "/assets/characters/lilibell-concept-thumb.webp",
+        "width": 1536,
+        "height": 1024,
+        "thumbWidth": 420,
+        "thumbHeight": 280
+      },
+      {
+        "kind": "sheet",
+        "label": "ビジュアルシート",
+        "src": "/assets/characters/lilibell-sheet.webp",
+        "thumbnail": "/assets/characters/lilibell-sheet-thumb.webp",
+        "width": 1055,
+        "height": 1491,
+        "thumbWidth": 396,
+        "thumbHeight": 560
+      },
+      {
+        "kind": "poster",
+        "label": "キャラクターポスター",
+        "src": "/assets/characters/lilibell-poster.webp",
+        "thumbnail": "/assets/characters/lilibell-poster-thumb.webp",
+        "width": 1122,
+        "height": 1402,
+        "thumbWidth": 420,
+        "thumbHeight": 525
+      }
+    ]
+  }
+]

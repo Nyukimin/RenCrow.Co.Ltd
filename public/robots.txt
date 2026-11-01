@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rencrow-coltd.ren-ai-coach.chatgpt.site/sitemap.xml

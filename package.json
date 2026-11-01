@@ -1,0 +1,16 @@
+{
+  "name": "rencrow-coltd",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=26.13.0 <27"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "export:pages": "node scripts/export-pages.mjs",
+    "check:pages": "node scripts/check-pages.mjs",
+    "dev": "python3 -m http.server 8080 --bind 127.0.0.1 --directory public"
+  }
+}

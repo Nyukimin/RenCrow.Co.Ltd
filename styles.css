@@ -193,3 +193,100 @@
 .game-video{margin:0 0 24px;border-radius:12px;overflow:hidden;background:#1a1832}
 .game-video video{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
 .game-video figcaption{padding:12px 16px;font-size:13px;color:var(--muted);background:#1a1832;text-align:center}
+
+/* Agent Profile Enhancements */
+.agent-role-section{background:linear-gradient(180deg,var(--lavender) 0%,var(--paper) 100%);border-block:1px solid var(--line)}
+.agent-role-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.agent-role-content h2{font-size:clamp(26px,3vw,40px);line-height:1.7;letter-spacing:-.04em;font-weight:500;margin-top:20px}
+.agent-role-content h2 span{color:var(--purple)}
+.agent-role-details{margin-top:30px}
+.agent-facts{display:grid;gap:18px}
+.agent-facts>div{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.agent-facts dt{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.05em}
+.agent-facts dd{font-size:13px;line-height:1.8;margin:0}
+.agent-card-large{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:1;max-width:400px;margin-left:auto}
+.agent-card-large img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.agent-card-overlay{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(transparent,#24232dcc);color:#fff;display:flex;justify-content:space-between;align-items:flex-end}
+.agent-card-number{font-size:48px;font-weight:800;opacity:.4;line-height:1}
+.agent-card-name{font-size:18px;font-weight:600;letter-spacing:.05em}
+
+.agent-voice-section{background:var(--paper)}
+.agent-voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:40px}
+.agent-voice-facts{display:grid;gap:16px}
+.agent-voice-facts>div{padding:16px 20px;background:#f5f3ef;border-radius:8px}
+.agent-voice-facts dt{font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.08em;margin-bottom:6px}
+.agent-voice-facts dd{font-size:14px;margin:0;font-weight:500}
+.agent-quotes{padding:30px;background:var(--lavender);border-radius:12px}
+.agent-quotes h3{font-size:14px;font-weight:600;margin-bottom:20px;color:var(--purple)}
+.agent-quote{font-size:15px;line-height:1.9;margin:0 0 14px;padding-left:16px;border-left:3px solid var(--purple)}
+.agent-quote:last-of-type{margin-bottom:0}
+.agent-quotes .content-note{margin-top:18px}
+
+.agent-team-section{background:#f9f8f5;border-block:1px solid var(--line)}
+.agent-team-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.team-section{padding:30px;background:#fff;border-radius:12px;border:1px solid var(--line)}
+.team-section-title{font-size:16px;font-weight:600;margin-bottom:8px}
+.team-section-desc{font-size:12px;color:var(--muted);margin-bottom:20px}
+.team-members{display:grid;gap:12px}
+.team-member-card{display:flex;align-items:center;gap:16px;padding:14px;border-radius:10px;border:1px solid var(--line);transition:border-color var(--duration-fast) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.team-member-card:active{transform:scale(0.98)}
+.team-member-card img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 15%;flex-shrink:0}
+.team-member-info{min-width:0}
+.team-member-name{display:block;font-size:14px;font-weight:600}
+.team-member-role{display:block;font-size:10px;color:var(--muted);margin-top:2px;overflow-wrap:anywhere}
+.team-members-small{display:flex;flex-wrap:wrap;gap:10px}
+.team-member-mini{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:30px;background:#f5f3ef;font-size:12px;font-weight:500;transition:background var(--duration-fast) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.team-member-mini:active{transform:scale(0.96)}
+.team-member-mini img{width:32px;height:32px;border-radius:50%;object-fit:cover;object-position:50% 15%}
+@media(hover:hover) and (pointer:fine){.team-member-card:hover{border-color:var(--purple)}.team-member-mini:hover{background:var(--lavender)}}
+
+.support-team-section{background:linear-gradient(135deg,#1a1820 0%,#2d2a35 100%);color:#fff}
+.support-team-section .section-heading h2{color:#fff}
+.support-team-section .section-heading h2 span{color:var(--lime)}
+.support-team-section .section-heading p{color:#a5a0b3}
+.support-guardian-info{display:flex;justify-content:center;margin:40px 0}
+.guardian-card{padding:40px 50px;background:#ffffff10;border-radius:16px;border:1px solid #ffffff20;text-align:center}
+.guardian-symbol{font-size:48px;font-weight:700;color:var(--guardian-color);margin-bottom:20px}
+.guardian-facts{display:flex;gap:30px;justify-content:center;flex-wrap:wrap}
+.guardian-facts>div{text-align:center}
+.guardian-facts dt{font-size:9px;color:#a5a0b3;letter-spacing:.08em;margin-bottom:4px}
+.guardian-facts dd{font-size:14px;margin:0;color:#fff}
+.support-team-members{margin-top:50px}
+.support-team-members h3{font-size:14px;color:#a5a0b3;margin-bottom:20px;text-align:center}
+.guardian-grid{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.guardian-member{display:flex;align-items:center;gap:14px;padding:14px 20px;background:#ffffff08;border:2px solid transparent;border-radius:12px;transition:border-color var(--duration-fast) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.guardian-member.is-current{border-color:var(--member-color);background:#ffffff15}
+.guardian-member:active{transform:scale(0.97)}
+.guardian-member img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 15%}
+.guardian-member-info{text-align:left}
+.guardian-member-name{display:block;font-size:14px;font-weight:600}
+.guardian-member-title{display:block;font-size:10px;color:#a5a0b3;margin-top:2px}
+@media(hover:hover) and (pointer:fine){.guardian-member:hover{border-color:var(--member-color)}}
+
+.personas-section{background:#f9f8f5;border-block:1px solid var(--line)}
+.personas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
+.persona-card{padding:30px;background:#fff;border-radius:12px;border:1px solid var(--line);border-top:4px solid var(--persona-color)}
+.persona-header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.persona-number{font-size:24px;font-weight:800;opacity:.2;line-height:1}
+.persona-name{font-size:20px;font-weight:600}
+.persona-english{font-size:11px;color:var(--muted)}
+.persona-tagline{font-size:14px;font-weight:500;color:var(--persona-color);margin-bottom:12px}
+.persona-description{font-size:12px;line-height:2;color:var(--muted)}
+.persona-traits{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding:0;list-style:none}
+.persona-traits li{font-size:10px;padding:6px 12px;background:color-mix(in srgb,var(--persona-color) 15%,#fff);border-radius:20px;color:var(--ink)}
+
+@media(max-width:900px){
+  .agent-role-grid{grid-template-columns:1fr;gap:30px}
+  .agent-card-large{max-width:300px;margin:0 auto}
+  .agent-voice-grid{grid-template-columns:1fr;gap:30px}
+  .agent-team-grid{grid-template-columns:1fr;gap:24px}
+  .personas-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .agent-facts>div{grid-template-columns:1fr;gap:6px}
+  .guardian-facts{gap:20px}
+  .guardian-card{padding:30px 24px}
+  .guardian-symbol{font-size:36px}
+  .guardian-member{padding:12px 16px}
+  .persona-card{padding:24px 20px}
+}
