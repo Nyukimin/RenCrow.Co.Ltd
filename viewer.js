@@ -9,17 +9,39 @@ if (dialog && typeof dialog.showModal === 'function') {
   const body = dialog.querySelector('[data-sheet-body]');
   const navigation = dialog.querySelector('[data-gallery-navigation]');
   const count = dialog.querySelector('[data-gallery-count]');
-  const basePath = document.querySelector('meta[name="rencrow-base-path"]')?.getAttribute('content') || '/';
   let opener;
   let items = [];
   let index = 0;
 
+  function siteRootPath() {
+    const href = document.querySelector('link[rel="stylesheet"]')?.getAttribute('href');
+    if (!href || /[\s\\?#]/.test(href) || href.includes('://') || href.startsWith('//')) return null;
+    let url;
+    try { url = new URL(href, document.baseURI); } catch { return null; }
+    if (url.origin !== location.origin || !url.pathname.endsWith('/styles.css')) return null;
+    return url.pathname.slice(0, -'styles.css'.length);
+  }
+
+  function siteRelativePath(value, root) {
+    if (typeof value !== 'string' || value.length === 0 || value.length > 400) return null;
+    if (/[\s\\?#]/.test(value) || value.includes('://') || value.startsWith('//')) return null;
+    let url;
+    try { url = new URL(value, document.baseURI); } catch { return null; }
+    if (url.origin !== location.origin || !url.pathname.startsWith(root)) return null;
+    const rest = url.pathname.slice(root.length);
+    if (rest.split('/').includes('..')) return null;
+    return rest;
+  }
+
   function readItem(trigger) {
     const source = trigger.dataset.sheetSrc;
     const profile = trigger.dataset.profileHref;
-    if (!/^\/(?:[A-Za-z0-9][A-Za-z0-9._-]*\/)*$/.test(basePath) || typeof source !== 'string' || typeof profile !== 'string') return null;
-    if (!source.startsWith(basePath) || !profile.startsWith(basePath)) return null;
-    if (!/^assets\/characters\/[a-z][a-z0-9-]*\.webp$/.test(source.slice(basePath.length)) || !/^characters\/[a-z][a-z0-9-]*\/$/.test(profile.slice(basePath.length))) return null;
+    const root = siteRootPath();
+    if (!root) return null;
+    const sourcePath = siteRelativePath(source, root);
+    const profilePath = siteRelativePath(profile, root);
+    if (!sourcePath || !profilePath) return null;
+    if (!/^assets\/characters\/[a-z][a-z0-9-]*\.webp$/.test(sourcePath) || !/^characters\/[a-z][a-z0-9-]*\/$/.test(profilePath)) return null;
     return { source, profile, name: trigger.dataset.sheetName, label: trigger.dataset.imageLabel || '紹介シート' };
   }
 
