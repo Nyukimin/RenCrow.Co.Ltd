@@ -16,7 +16,9 @@ await assertStaticDirectory(source);
 const homepage = await readFile(path.join(source, 'index.html'), 'utf8');
 const canonical = homepage.match(/<link rel="canonical" href="([^"]+)"/);
 if (!canonical) throw new Error('Source homepage has no canonical URL');
-const sourceOrigin = new URL(canonical[1]).origin;
+const published = new URL(canonical[1]);
+const pagesBase = pages.href.replace(/\/$/, '');
+const alreadyOnPages = published.href.startsWith(pages.href) || published.href.startsWith(pagesBase);
 await rm(target, { recursive: true, force: true });
 await mkdir(target, { recursive: true });
 await cp(source, target, { recursive: true });
@@ -26,10 +28,9 @@ async function transform(directory) {
     if (entry.isDirectory()) { await transform(file); continue; }
     if (!['.html', '.css', '.txt', '.xml'].includes(path.extname(file))) continue;
     let text = await readFile(file, 'utf8');
-    text = text.replaceAll(sourceOrigin, pages.href.replace(/\/$/, ''));
+    if (!alreadyOnPages) text = text.replaceAll(published.origin, pagesBase);
     if (file.endsWith('.html')) {
-      text = text.replace(/\b(href|src|data-sheet-src|data-profile-href)="(\/(?!\/)[^"]*)"/g, (_, key, value) => `${key}="${pages.pathname}${value.slice(1)}"`);
-      text = text.replace('<meta charset="UTF-8">', `<meta charset="UTF-8"><meta name="rencrow-base-path" content="${pages.pathname}">`);
+      text = text.replace(/\b(href|src|poster|data-sheet-src|data-profile-href)="(\/(?!\/)[^"]*)"/g, (_, key, value) => `${key}="${pages.pathname}${value.slice(1)}"`);
     } else if (file.endsWith('.css')) {
       text = text.replace(/url\((['"]?)(\/(?!\/)[^)'"\s]+)\1\)/g, (_, quote, value) => `url(${quote}${pages.pathname}${value.slice(1)}${quote})`);
     }

@@ -41,7 +41,7 @@ def image_asset(character, source, kind, label, existing_src=None):
         thumb.thumbnail((420, 560), Image.Resampling.LANCZOS)
         thumb.save(DEST / (stem + '-thumb.webp'), 'WEBP', quality=84, method=6)
     records.append(f'| {character["name"]} | {label} | {source.parent.name}/{source.name} | `{hashlib.sha256(source.read_bytes()).hexdigest()}` |')
-    return dict(kind=kind, label=label, src=existing_src or f'/assets/characters/{stem}.webp', thumbnail=f'/assets/characters/{stem}-thumb.webp', width=width, height=height, thumbWidth=thumb.width, thumbHeight=thumb.height)
+    return dict(kind=kind, label=label, src=existing_src or f'assets/characters/{stem}.webp', thumbnail=f'assets/characters/{stem}-thumb.webp', width=width, height=height, thumbWidth=thumb.width, thumbHeight=thumb.height)
 
 for character in characters:
     if character['group'] != 'ip':

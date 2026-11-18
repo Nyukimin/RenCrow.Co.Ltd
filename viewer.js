@@ -13,35 +13,29 @@ if (dialog && typeof dialog.showModal === 'function') {
   let items = [];
   let index = 0;
 
-  function siteRootPath() {
-    const href = document.querySelector('link[rel="stylesheet"]')?.getAttribute('href');
-    if (!href || /[\s\\?#]/.test(href) || href.includes('://') || href.startsWith('//')) return null;
-    let url;
-    try { url = new URL(href, document.baseURI); } catch { return null; }
-    if (url.origin !== location.origin || !url.pathname.endsWith('/styles.css')) return null;
-    return url.pathname.slice(0, -'styles.css'.length);
+  function isRelative(value) {
+    return typeof value === 'string' && value.length > 0 && !/^(?:[a-z][a-z0-9+.-]*:|\/\/|\/|\\)/i.test(value) && !value.includes('\\');
   }
 
-  function siteRelativePath(value, root) {
-    if (typeof value !== 'string' || value.length === 0 || value.length > 400) return null;
-    if (/[\s\\?#]/.test(value) || value.includes('://') || value.startsWith('//')) return null;
-    let url;
-    try { url = new URL(value, document.baseURI); } catch { return null; }
-    if (url.origin !== location.origin || !url.pathname.startsWith(root)) return null;
-    const rest = url.pathname.slice(root.length);
-    if (rest.split('/').includes('..')) return null;
-    return rest;
+  function resolveSameOrigin(value) {
+    try {
+      const url = new URL(value, document.baseURI);
+      if (url.origin !== location.origin) return null;
+      return url;
+    } catch {
+      return null;
+    }
   }
 
   function readItem(trigger) {
     const source = trigger.dataset.sheetSrc;
     const profile = trigger.dataset.profileHref;
-    const root = siteRootPath();
-    if (!root) return null;
-    const sourcePath = siteRelativePath(source, root);
-    const profilePath = siteRelativePath(profile, root);
-    if (!sourcePath || !profilePath) return null;
-    if (!/^assets\/characters\/[a-z][a-z0-9-]*\.webp$/.test(sourcePath) || !/^characters\/[a-z][a-z0-9-]*\/$/.test(profilePath)) return null;
+    if (!isRelative(source) || !isRelative(profile)) return null;
+    const sourceUrl = resolveSameOrigin(source);
+    const profileUrl = resolveSameOrigin(profile);
+    if (!sourceUrl || !profileUrl) return null;
+    if (!/\/assets\/characters\/[a-z][a-z0-9-]*\.webp$/.test(sourceUrl.pathname)) return null;
+    if (!/\/characters\/[a-z][a-z0-9-]*\/$/.test(profileUrl.pathname)) return null;
     return { source, profile, name: trigger.dataset.sheetName, label: trigger.dataset.imageLabel || '紹介シート' };
   }
 

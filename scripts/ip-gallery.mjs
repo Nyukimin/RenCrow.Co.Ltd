@@ -15,7 +15,8 @@ const themeColors = {
   itsuki: '#7b558b', valto: '#5b5b8b', rubica: '#c77b8b', lilibell: '#e8b4c8',
 };
 
-export function renderIpGallery(ipCharacters, { escape }) {
+export function renderIpGallery(ipCharacters, { escape, url }) {
+  const ref = value => escape(url(value));
   const switcher = `
     <div class="ip-variant-switcher" role="tablist" aria-label="表示スタイルを切り替え">
       <button role="tab" data-variant="0" aria-selected="true">現行</button>
@@ -25,11 +26,11 @@ export function renderIpGallery(ipCharacters, { escape }) {
       <button role="tab" data-variant="D" aria-selected="false">D: カード</button>
     </div>`;
 
-  const variantDefault = renderVariantDefault(ipCharacters, { escape });
-  const variantA = renderVariantA(ipCharacters, { escape });
-  const variantB = renderVariantB(ipCharacters, { escape });
-  const variantC = renderVariantC(ipCharacters, { escape });
-  const variantD = renderVariantD(ipCharacters, { escape });
+  const variantDefault = renderVariantDefault(ipCharacters, { escape, ref });
+  const variantA = renderVariantA(ipCharacters, { escape, ref });
+  const variantB = renderVariantB(ipCharacters, { escape, ref });
+  const variantC = renderVariantC(ipCharacters, { escape, ref });
+  const variantD = renderVariantD(ipCharacters, { escape, ref });
 
   return `
     <section class="ip-gallery-page wrap" aria-labelledby="ip-gallery-title">
@@ -51,13 +52,13 @@ export function renderIpGallery(ipCharacters, { escape }) {
     </section>`;
 }
 
-function renderVariantDefault(chars, { escape }) {
+function renderVariantDefault(chars, { escape, ref }) {
   return `
     <div class="variant-0-grid">
       ${chars.map(c => `
         <article class="v0-card">
-          <a href="/characters/${c.id}/" class="v0-visual" style="--accent:${themeColors[c.id] || '#6652ba'}">
-            <img src="${escape(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
+          <a href="${ref(`/characters/${c.id}/`)}" class="v0-visual" style="--accent:${themeColors[c.id] || '#6652ba'}">
+            <img src="${ref(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
             <span class="v0-number">IP / ${String(c.number).padStart(2,'0')}</span>
           </a>
           <div class="v0-info">
@@ -70,7 +71,7 @@ function renderVariantDefault(chars, { escape }) {
     </div>`;
 }
 
-function renderVariantA(chars, { escape }) {
+function renderVariantA(chars, { escape, ref }) {
   return `
     <div class="variant-a">
       <aside class="va-filters" role="group" aria-label="フィルター">
@@ -96,7 +97,7 @@ function renderVariantA(chars, { escape }) {
             return `
             <article class="va-item" role="listitem" data-series="${series}" data-gender="${gender}" data-id="${c.id}">
               <button class="va-thumbnail" data-select-char="${c.id}" aria-label="${escape(c.name)}を選択">
-                <img src="${escape(c.image)}" alt="" loading="lazy" decoding="async">
+                <img src="${ref(c.image)}" alt="" loading="lazy" decoding="async">
                 <span class="va-badge">${String(c.number).padStart(2,'0')}</span>
               </button>
               <span class="va-name">${escape(c.english)}</span>
@@ -110,14 +111,14 @@ function renderVariantA(chars, { escape }) {
           ${chars.map(c => `
             <article class="va-detail-card" data-detail="${c.id}" hidden>
               <div class="va-detail-image" style="--accent:${themeColors[c.id] || '#6652ba'}">
-                <img src="${escape(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
+                <img src="${ref(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
               </div>
               <div class="va-detail-info">
                 <span class="va-detail-number">IP CHARACTER #${String(c.number).padStart(2,'0')}</span>
                 <h2>${escape(c.name)} <small>${escape(c.english)}</small></h2>
                 <p class="va-detail-tagline">${escape(c.tagline)}</p>
                 <p class="va-detail-desc">${escape(c.description)}</p>
-                <a href="/characters/${c.id}/" class="va-detail-link">詳細ページへ →</a>
+                <a href="${ref(`/characters/${c.id}/`)}" class="va-detail-link">詳細ページへ →</a>
               </div>
             </article>
           `).join('')}
@@ -126,14 +127,14 @@ function renderVariantA(chars, { escape }) {
     </div>`;
 }
 
-function renderVariantB(chars, { escape }) {
+function renderVariantB(chars, { escape, ref }) {
   return `
     <div class="variant-b" data-current-char="${chars[0].id}">
       <div class="vb-showcase">
         ${chars.map((c, i) => `
           <div class="vb-character" data-char="${c.id}" style="--theme:${themeColors[c.id] || '#6652ba'}" ${i > 0 ? 'hidden' : ''}>
             <div class="vb-fullbody">
-              <img src="${escape(c.image)}" alt="${escape(c.name)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
+              <img src="${ref(c.image)}" alt="${escape(c.name)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
               <div class="vb-backdrop"></div>
             </div>
             <div class="vb-info">
@@ -142,7 +143,7 @@ function renderVariantB(chars, { escape }) {
               <p class="vb-jp-name">${escape(c.name)}</p>
               <blockquote class="vb-tagline">${escape(c.tagline)}</blockquote>
               <p class="vb-desc">${escape(c.description)}</p>
-              <a href="/characters/${c.id}/" class="vb-link">PROFILE →</a>
+              <a href="${ref(`/characters/${c.id}/`)}" class="vb-link">PROFILE →</a>
             </div>
           </div>
         `).join('')}
@@ -150,7 +151,7 @@ function renderVariantB(chars, { escape }) {
       <nav class="vb-strip" aria-label="キャラクター選択">
         ${chars.map(c => `
           <button class="vb-thumb" data-thumb="${c.id}" style="--thumb-color:${themeColors[c.id] || '#6652ba'}" aria-label="${escape(c.name)}">
-            <img src="${escape(c.image)}" alt="" loading="lazy" decoding="async">
+            <img src="${ref(c.image)}" alt="" loading="lazy" decoding="async">
             <span>${String(c.number).padStart(2,'0')}</span>
           </button>
         `).join('')}
@@ -158,7 +159,7 @@ function renderVariantB(chars, { escape }) {
     </div>`;
 }
 
-function renderVariantC(chars, { escape }) {
+function renderVariantC(chars, { escape, ref }) {
   const groups = [
     { key: 'classic', label: '初期キャラクター', sublabel: '日常の物語', chars: chars.filter(c => c.number <= 22), color: '#6652ba' },
     { key: 'yairo', label: '八色通り', sublabel: '好きなものが違うから、同じ街が違って見える', chars: chars.filter(c => c.number >= 23 && c.number <= 30), color: '#c76842' },
@@ -178,9 +179,9 @@ function renderVariantC(chars, { escape }) {
           </header>
           <div class="vc-members">
             ${g.chars.map(c => `
-              <a href="/characters/${c.id}/" class="vc-member" style="--accent:${themeColors[c.id] || g.color}">
+              <a href="${ref(`/characters/${c.id}/`)}" class="vc-member" style="--accent:${themeColors[c.id] || g.color}">
                 <div class="vc-avatar">
-                  <img src="${escape(c.image)}" alt="" loading="lazy" decoding="async">
+                  <img src="${ref(c.image)}" alt="" loading="lazy" decoding="async">
                 </div>
                 <div class="vc-member-info">
                   <span class="vc-member-num">#${String(c.number).padStart(2,'0')}</span>
@@ -213,7 +214,7 @@ function renderVariantC(chars, { escape }) {
     </div>`;
 }
 
-function renderVariantD(chars, { escape }) {
+function renderVariantD(chars, { escape, ref }) {
   return `
     <div class="variant-d">
       ${chars.map(c => {
@@ -222,7 +223,7 @@ function renderVariantD(chars, { escape }) {
         return `
         <article class="vd-card" style="--card-accent:${themeColors[c.id] || '#6652ba'}">
           <div class="vd-portrait">
-            <img src="${escape(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
+            <img src="${ref(c.image)}" alt="${escape(c.name)}" loading="lazy" decoding="async">
             <span class="vd-number">${String(c.number).padStart(2,'0')}</span>
           </div>
           <div class="vd-content">
@@ -242,7 +243,7 @@ function renderVariantD(chars, { escape }) {
               `}
             </dl>
             ${quotes.length ? `<blockquote class="vd-quote">${escape(quotes[0])}</blockquote>` : ''}
-            <a href="/characters/${c.id}/" class="vd-more">詳しく見る</a>
+            <a href="${ref(`/characters/${c.id}/`)}" class="vd-more">詳しく見る</a>
           </div>
         </article>`;
       }).join('')}

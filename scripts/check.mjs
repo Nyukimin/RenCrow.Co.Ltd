@@ -2,11 +2,28 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { relativeUrl, siteRelativePath } from './paths.mjs';
 import { assertSupportedNode, assertStaticDirectory } from './security.mjs';
 assertSupportedNode();
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const publicRoot = path.join(root, 'public');
+const publicRootResolved = path.resolve(publicRoot);
+function assetFile(sitePath) {
+  const target = path.resolve(publicRoot, siteRelativePath(sitePath));
+  assert.ok(target === publicRootResolved || target.startsWith(publicRootResolved + path.sep), `Path escapes site: ${sitePath}`);
+  return target;
+}
+assert.equal(relativeUrl('/', '/styles.css'), './styles.css');
+assert.equal(relativeUrl('/characters/lumina/', '/styles.css'), '../../styles.css');
+assert.equal(relativeUrl('/characters/lumina/', '/assets/characters/lumina.webp'), '../../assets/characters/lumina.webp');
+assert.equal(relativeUrl('/games/', '/assets/games/videos/last-bag-delivery.mp4'), '../assets/games/videos/last-bag-delivery.mp4');
+assert.equal(relativeUrl('/', '/#characters'), '#characters');
+assert.equal(relativeUrl('/games/', '/#creations'), '../#creations');
+assert.equal(relativeUrl('/characters/mio/', '/characters/aka/'), '../aka/');
+assert.equal(relativeUrl('/404.html', '/'), './');
+assert.equal(relativeUrl('/404.html', '/#characters'), './#characters');
+assert.equal(relativeUrl('/ip-gallery/', '/ip-gallery.js'), '../ip-gallery.js');
 const characters = JSON.parse(await readFile(path.join(root, 'content/characters.json'), 'utf8'));
 assert.equal(characters.length, 41, 'Expected 9 AI/friend/support characters and 32 IP characters');
 assert.equal(new Set(characters.map(c => c.id)).size, 41, 'Duplicate character IDs');
@@ -19,14 +36,16 @@ assert.deepEqual(characters.filter(c => c.group === 'support').map(c => c.englis
 for (const c of characters) {
   assert.match(c.id, /^[a-z][a-z0-9-]*$/);
   assert.ok(c.name && c.english && c.width > 0 && c.height > 0);
-  assert.ok((await stat(path.join(publicRoot, c.image))).size > 0);
-  assert.match(c.sheet, /^\/assets\/characters\/[a-z]+-sheet\.webp$/);
-  assert.ok((await stat(path.join(publicRoot, c.sheet))).size > 0);
+  assert.ok((await stat(assetFile(c.image))).size > 0);
+  assert.match(c.sheet, /^\/?assets\/characters\/[a-z]+-sheet\.webp$/);
+  assert.ok((await stat(assetFile(c.sheet))).size > 0);
   assert.ok(c.sheetWidth > 0 && c.sheetHeight > 0);
   const profile = await readFile(path.join(publicRoot, 'characters', c.id, 'index.html'), 'utf8');
   assert.ok(profile.includes(`<h1 id="profile-name">${c.name}</h1>`), `Profile mismatch: ${c.id}`);
   assert.ok(profile.includes('作品の公開が始まり次第'), `Missing empty-work state: ${c.id}`);
-  assert.ok(profile.includes(`data-sheet-src="${c.sheet}"`), `Missing sheet viewer trigger: ${c.id}`);
+  assert.ok(profile.includes(`data-sheet-src="${relativeUrl(`/characters/${c.id}/`, c.sheet)}"`), `Missing sheet viewer trigger: ${c.id}`);
+  assert.ok(profile.includes('https://nyukimin.github.io/RenCrow.Co.Ltd/'), `Missing Pages canonical: ${c.id}`);
+  assert.ok(!profile.includes('rencrow-coltd.ren-ai-coach.chatgpt.site'), `Old origin: ${c.id}`);
   if (c.group === 'ip') {
     assert.equal(c.gallery.length, 5, `Expected all 5 supplied image types: ${c.id}`);
     assert.equal(new Set(c.gallery.map(asset => asset.src)).size, 5, `Duplicate gallery images: ${c.id}`);
@@ -34,11 +53,11 @@ for (const c of characters) {
       assert.ok(c.gallery.some(asset => asset.kind === kind), `Missing ${kind}: ${c.id}`);
     }
     for (const asset of c.gallery) {
-      assert.match(asset.src, /^\/assets\/characters\/[a-z][a-z0-9-]*\.webp$/);
-      assert.ok((await stat(path.join(publicRoot, asset.src))).size > 0);
-      assert.ok((await stat(path.join(publicRoot, asset.thumbnail))).size > 0);
+      assert.match(asset.src, /^\/?assets\/characters\/[a-z][a-z0-9-]*\.webp$/);
+      assert.ok((await stat(assetFile(asset.src))).size > 0);
+      assert.ok((await stat(assetFile(asset.thumbnail))).size > 0);
       assert.ok(asset.width > 0 && asset.height > 0 && asset.thumbWidth > 0 && asset.thumbHeight > 0);
-      assert.ok(profile.includes(`data-sheet-src="${asset.src}"`), `Unreachable gallery image: ${asset.src}`);
+      assert.ok(profile.includes(`data-sheet-src="${relativeUrl(`/characters/${c.id}/`, asset.src)}"`), `Unreachable gallery image: ${asset.src}`);
     }
     assert.ok(c.details.personality.length > 0, `Missing personality: ${c.id}`);
     assert.equal(c.details.scenes.length, 3, `Missing scene descriptions: ${c.id}`);
@@ -66,17 +85,25 @@ for (const file of htmlFiles) {
   assert.equal(ids.length, new Set(ids).size, `Duplicate HTML ids: ${file}`);
   assert.ok(html.includes('http-equiv="Content-Security-Policy"'), `Missing CSP: ${file}`);
   assert.ok(html.includes('content="no-referrer"'), `Missing referrer policy: ${file}`);
-  assert.ok(html.includes('src="/viewer.js"'), `Missing viewer script: ${file}`);
+  const depth = path.relative(publicRoot, file).split(path.sep).filter(Boolean).length - 1;
+  const assetPrefix = depth <= 0 ? './' : '../'.repeat(depth);
+  assert.ok(html.includes(`src="${assetPrefix}viewer.js"`), `Missing viewer script: ${file}`);
+  assert.ok(html.includes(`href="${assetPrefix}styles.css"`), `Missing stylesheet: ${file}`);
+  assert.ok(!html.includes('rencrow-coltd.ren-ai-coach.chatgpt.site'), `Old origin: ${file}`);
+  assert.ok(!/\s(?:href|src|poster|data-sheet-src|data-profile-href)="\/(?!\/)/.test(html), `Root-absolute internal URL: ${file}`);
   assert.ok(!/\son\w+\s*=/i.test(html), `Inline event handler: ${file}`);
   assert.ok(!/<script(?![^>]*\bsrc=)[^>]*>\s*\S/i.test(html), `Inline script: ${file}`);
-  for (const [, attribute, raw] of html.matchAll(/\b(href|src)="([^"]+)"/g)) {
+  const fileUrl = new URL(path.relative(publicRoot, file).split(path.sep).join('/'), 'http://local/');
+  for (const [, attribute, raw] of html.matchAll(/\b(href|src|poster|data-sheet-src|data-profile-href)="([^"]+)"/g)) {
     if (/^https?:/.test(raw)) continue;
     assert.ok(raw && !/^(javascript|data):/i.test(raw), `Invalid ${attribute}: ${raw}`);
-    const url = new URL(raw, 'http://local/' + path.relative(publicRoot, file));
-    let target = path.join(publicRoot, decodeURIComponent(url.pathname));
+    const url = new URL(raw, fileUrl);
+    const relativePath = decodeURIComponent(url.pathname).replace(/^\/+/, '');
+    let target = path.resolve(publicRoot, relativePath);
+    assert.ok(target === publicRootResolved || target.startsWith(publicRootResolved + path.sep), `Path escapes site: ${raw} in ${file}`);
     if ((await stat(target)).isDirectory()) target = path.join(target, 'index.html');
     assert.ok((await stat(target)).isFile(), `Missing target: ${raw} in ${file}`);
-    if (url.hash) {
+    if (url.hash && url.hash !== '#') {
       const targetHtml = await readFile(target, 'utf8');
       assert.ok(targetHtml.includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `Missing anchor: ${raw}`);
     }
@@ -98,21 +125,22 @@ const games = JSON.parse(await readFile(path.join(root, 'content/games.json'), '
 const gamesHtml = await readFile(path.join(publicRoot, 'games/index.html'), 'utf8');
 assert.equal(games.length, 11, 'Expected 11 games');
 assert.equal(new Set(games.map(g => g.slug)).size, 11, 'Duplicate game slugs');
-assert.ok(index.includes('href="/games/"'));
+assert.ok(index.includes('href="./games/"'));
+assert.ok(index.includes('href="https://nyukimin.github.io/RenCrow.Co.Ltd/"'));
 const sitemap = await readFile(path.join(publicRoot, 'sitemap.xml'), 'utf8');
 assert.ok(sitemap.includes('/games/</loc>'));
 assert.ok(sitemap.includes('/ip-gallery/</loc>'), 'IP gallery should be in sitemap');
 for (const g of games) {
   assert.match(g.slug, /^[a-z][a-z0-9-]*$/);
-  assert.match(g.screenshot, /^\/assets\/games\/[a-z][a-z0-9-]*\.(webp|svg)$/);
-  assert.ok((await stat(path.join(publicRoot, g.screenshot))).size > 0);
+  assert.match(g.screenshot, /^\/?assets\/games\/[a-z][a-z0-9-]*\.(webp|svg)$/);
+  assert.ok((await stat(assetFile(g.screenshot))).size > 0);
   assert.ok(gamesHtml.includes(`id="${g.slug}"`));
-  assert.ok(gamesHtml.includes(`src="${g.screenshot}"`));
+  assert.ok(gamesHtml.includes(`src="${relativeUrl('/games/', g.screenshot)}"`));
   assert.ok(g.title && g.name && g.intro && g.controls && g.testStatus && g.screenshotAlt);
   if (g.videoUrl) {
-    assert.match(g.videoUrl, /^\/assets\/games\/videos\/[a-z][a-z0-9-]*\.mp4$/);
-    assert.ok((await stat(path.join(publicRoot, g.videoUrl))).size > 0, `Video missing: ${g.videoUrl}`);
-    assert.ok(gamesHtml.includes(`src="${g.videoUrl}"`), `Video not embedded: ${g.videoUrl}`);
+    assert.match(g.videoUrl, /^\/?assets\/games\/videos\/[a-z][a-z0-9-]*\.mp4$/);
+    assert.ok((await stat(assetFile(g.videoUrl))).size > 0, `Video missing: ${g.videoUrl}`);
+    assert.ok(gamesHtml.includes(`src="${relativeUrl('/games/', g.videoUrl)}"`), `Video not embedded: ${g.videoUrl}`);
     assert.ok(gamesHtml.includes('イメージ動画（コンセプト映像）'), 'Video label missing');
   }
   if (g.playUrl === null) assert.ok(gamesHtml.includes('未公開・テストURL未発行'));

@@ -1,4 +1,4 @@
-export function renderAgentProfile(character, { escape, allAgents }) {
+export function renderAgentProfile(character, { escape, allAgents, url }) {
   const agent = character.agentDetails;
   if (!agent) return '';
 
@@ -6,8 +6,8 @@ export function renderAgentProfile(character, { escape, allAgents }) {
   const isMain = character.group === 'main';
   const isFriend = character.group === 'friend';
 
-  const teamSection = isMain ? renderTeamRelations(character, allAgents, { escape }) : '';
-  const supportTeamSection = isSupport ? renderSupportTeam(character, allAgents, { escape }) : '';
+  const teamSection = isMain ? renderTeamRelations(character, allAgents, { escape, url }) : '';
+  const supportTeamSection = isSupport ? renderSupportTeam(character, allAgents, { escape, url }) : '';
   const personaSection = isFriend && agent.personas ? renderPersonas(agent.personas, { escape }) : '';
 
   return `<nav class="profile-quick-nav wrap" aria-label="キャラクター紹介の目次">
@@ -35,7 +35,7 @@ ${personaSection ? '<a href="#agent-personas">3つのペルソナ</a>' : ''}
     </div>
     <div class="agent-role-visual">
       <div class="agent-card-large color-${character.id}">
-        <img src="${escape(character.image)}" alt="${escape(character.name)}" width="${character.width}" height="${character.height}" loading="lazy" decoding="async">
+        <img src="${escape(url(character.image))}" alt="${escape(character.name)}" width="${character.width}" height="${character.height}" loading="lazy" decoding="async">
         <div class="agent-card-overlay">
           <span class="agent-card-number">${String(character.number).padStart(2, '0')}</span>
           <span class="agent-card-name">${escape(character.english)}</span>
@@ -78,7 +78,7 @@ ${supportTeamSection}
 ${personaSection}`;
 }
 
-function renderTeamRelations(character, allAgents, { escape }) {
+function renderTeamRelations(character, allAgents, { escape, url }) {
   const mainAgents = allAgents.filter(a => a.group === 'main' && a.id !== character.id);
   const supportAgents = allAgents.filter(a => a.group === 'support');
   
@@ -96,8 +96,8 @@ function renderTeamRelations(character, allAgents, { escape }) {
       <h3 class="team-section-title">メインAgent</h3>
       <p class="team-section-desc">それぞれの専門領域を持つ4人のメインキャラクター。</p>
       <div class="team-members">
-        ${mainAgents.map(a => `<a href="/characters/${a.id}/" class="team-member-card color-${a.id}">
-          <img src="${escape(a.image)}" alt="${escape(a.name)}" width="80" height="80" loading="lazy" decoding="async">
+        ${mainAgents.map(a => `<a href="${escape(url(`/characters/${a.id}/`))}" class="team-member-card color-${a.id}">
+          <img src="${escape(url(a.image))}" alt="${escape(a.name)}" width="80" height="80" loading="lazy" decoding="async">
           <div class="team-member-info">
             <span class="team-member-name">${escape(a.english)}</span>
             <span class="team-member-role">${escape(a.agentDetails?.role || a.tagline)}</span>
@@ -109,8 +109,8 @@ function renderTeamRelations(character, allAgents, { escape }) {
       <h3 class="team-section-title">サポートCoder（四神）</h3>
       <p class="team-section-desc">開発作業を担う4人の守護者たち。</p>
       <div class="team-members team-members-small">
-        ${supportAgents.map(a => `<a href="/characters/${a.id}/" class="team-member-mini color-${a.id}">
-          <img src="${escape(a.image)}" alt="${escape(a.name)}" width="48" height="48" loading="lazy" decoding="async">
+        ${supportAgents.map(a => `<a href="${escape(url(`/characters/${a.id}/`))}" class="team-member-mini color-${a.id}">
+          <img src="${escape(url(a.image))}" alt="${escape(a.name)}" width="48" height="48" loading="lazy" decoding="async">
           <span>${escape(a.name)}</span>
         </a>`).join('')}
       </div>
@@ -119,7 +119,7 @@ function renderTeamRelations(character, allAgents, { escape }) {
 </section>`;
 }
 
-function renderSupportTeam(character, allAgents, { escape }) {
+function renderSupportTeam(character, allAgents, { escape, url }) {
   const supportAgents = allAgents.filter(a => a.group === 'support');
   const agent = character.agentDetails;
   
@@ -159,8 +159,8 @@ function renderSupportTeam(character, allAgents, { escape }) {
         ${supportAgents.map(a => {
           const aInfo = directionMap[a.id] || {};
           const isCurrent = a.id === character.id;
-          return `<a href="/characters/${a.id}/" class="guardian-member ${isCurrent ? 'is-current' : ''}" style="--member-color: ${aInfo.color || 'var(--purple)'}">
-            <img src="${escape(a.image)}" alt="${escape(a.name)}" width="64" height="64" loading="lazy" decoding="async">
+          return `<a href="${escape(url(`/characters/${a.id}/`))}" class="guardian-member ${isCurrent ? 'is-current' : ''}" style="--member-color: ${aInfo.color || 'var(--purple)'}">
+            <img src="${escape(url(a.image))}" alt="${escape(a.name)}" width="64" height="64" loading="lazy" decoding="async">
             <div class="guardian-member-info">
               <span class="guardian-member-name">${escape(a.name)}</span>
               <span class="guardian-member-title">${escape(aInfo.direction || '')}・${escape(aInfo.guardian || '')}</span>

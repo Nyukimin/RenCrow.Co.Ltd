@@ -68,7 +68,7 @@ for i, (english, name) in enumerate(main_names):
     width, height = optimize(source, slug)
     sheet_source = source.with_name(english + ('_charsheet_01.png' if i < 5 else '_base.png'))
     sheet_width, sheet_height = optimize(sheet_source, slug + '-sheet', (2400, 3400), 94)
-    characters.append(dict(id=slug, name=name, english=english, group=group, number=i+1, tagline='', description='', image=f'/assets/characters/{slug}.webp', width=width, height=height, sheet=f'/assets/characters/{slug}-sheet.webp', sheetWidth=sheet_width, sheetHeight=sheet_height))
+    characters.append(dict(id=slug, name=name, english=english, group=group, number=i+1, tagline='', description='', image=f'assets/characters/{slug}.webp', width=width, height=height, sheet=f'assets/characters/{slug}-sheet.webp', sheetWidth=sheet_width, sheetHeight=sheet_height))
     provenance.append(f'| {english} | {source.relative_to(SOURCE)} | ユーザー指定の名前・区分。人物設定の創作なし |')
     provenance.append(f'| {english} 紹介シート | {sheet_source.relative_to(SOURCE)} | 既存シートを縮小・WebP変換。全文表示 |')
 
@@ -85,7 +85,7 @@ for i, directory in enumerate(sorted(p for p in ip_source.iterdir() if p.is_dir(
     width, height = optimize(source, slug)
     sheet_source = next(directory.glob('*visual_sheet.png'))
     sheet_width, sheet_height = optimize(sheet_source, slug + '-sheet', (2400, 3400), 94)
-    characters.append(dict(id=slug, name=name, english=english, group='ip', number=i+1, tagline=tagline, description=SUMMARIES[i], image=f'/assets/characters/{slug}.webp', width=width, height=height, sheet=f'/assets/characters/{slug}-sheet.webp', sheetWidth=sheet_width, sheetHeight=sheet_height))
+    characters.append(dict(id=slug, name=name, english=english, group='ip', number=i+1, tagline=tagline, description=SUMMARIES[i], image=f'assets/characters/{slug}.webp', width=width, height=height, sheet=f'assets/characters/{slug}-sheet.webp', sheetWidth=sheet_width, sheetHeight=sheet_height))
     provenance.append(f'| {name} / {english} | 32char/{directory.name}/{source.name} | {text_file.name}の人物設定を紹介用に要約。内部の運営・収益化案は除外 |')
     provenance.append(f'| {name} 紹介シート | 32char/{directory.name}/{sheet_source.name} | 既存のビジュアルシートを全文表示 |')
 

@@ -1,13 +1,14 @@
-export function renderIpProfile(character, { escape }) {
+export function renderIpProfile(character, { escape, url }) {
   const details = character.details;
   const gallery = character.gallery;
   if (!details || !gallery?.length) return '';
+  const ref = value => escape(url(value));
   const paragraphs = values => values.map(value => `<p>${escape(value)}</p>`).join('');
   const fullbody = gallery.find(asset => asset.kind === 'fullbody');
   const concept = gallery.find(asset => asset.kind === 'concept');
   const reference = gallery.find(asset => asset.kind === 'datasheet') || gallery.find(asset => asset.kind === 'sheet');
   function media(asset, className, { full = false, item = false } = {}) {
-    return `<a class="${className}" href="${escape(asset.src)}" data-sheet-src="${escape(asset.src)}" data-sheet-name="${escape(character.english + ' / ' + character.name)}" data-image-label="${escape(asset.label)}" data-profile-href="/characters/${character.id}/" data-gallery-group="${character.id}" ${item ? 'data-gallery-item' : ''} aria-haspopup="dialog" aria-label="${escape(character.name + 'の' + asset.label)}を拡大"><img src="${escape(full ? asset.src : asset.thumbnail)}" alt="${escape(character.name + 'の' + asset.label)}" width="${full ? asset.width : asset.thumbWidth || 420}" height="${full ? asset.height : asset.thumbHeight || 560}" loading="lazy" decoding="async"><span class="media-enlarge" aria-hidden="true">⤢</span></a>`;
+    return `<a class="${className}" href="${ref(asset.src)}" data-sheet-src="${ref(asset.src)}" data-sheet-name="${escape(character.english + ' / ' + character.name)}" data-image-label="${escape(asset.label)}" data-profile-href="${ref(`/characters/${character.id}/`)}" data-gallery-group="${character.id}" ${item ? 'data-gallery-item' : ''} aria-haspopup="dialog" aria-label="${escape(character.name + 'の' + asset.label)}を拡大"><img src="${ref(full ? asset.src : asset.thumbnail)}" alt="${escape(character.name + 'の' + asset.label)}" width="${full ? asset.width : asset.thumbWidth || 420}" height="${full ? asset.height : asset.thumbHeight || 560}" loading="lazy" decoding="async"><span class="media-enlarge" aria-hidden="true">⤢</span></a>`;
   }
   const quote = details.quotes[0];
   return `<nav class="profile-quick-nav wrap" aria-label="キャラクター紹介の目次"><a href="#personality">人物像</a><a href="#visual-world">ビジュアルと場面</a><a href="#gallery">ギャラリー</a><a href="#gallery-${reference.kind}">設定資料</a><a href="#character-works">作品</a></nav>

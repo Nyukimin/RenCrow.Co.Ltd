@@ -19,14 +19,14 @@ async function walk(current) {
       assert.ok(!entry.name.startsWith('.') && !['content', 'docs', 'scripts', 'node_modules', 'vendor'].includes(entry.name), `Private/source directory: ${relative}`);
       await walk(file);
     } else {
-      assert.match(relative, /^(?:index\.html|404\.html|styles\.css|app\.js|viewer\.js|favicon\.svg|robots\.txt|sitemap\.xml|README\.md|\.nojekyll|games\/index\.html|assets\/games\/[a-z][a-z0-9-]*\.webp|characters\/[a-z][a-z0-9-]*\/index\.html|assets\/characters\/[a-z][a-z0-9-]*\.webp)$/);
+      assert.match(relative, /^(?:index\.html|404\.html|styles\.css|app\.js|viewer\.js|ip-gallery\.js|favicon\.svg|robots\.txt|sitemap\.xml|README\.md|\.nojekyll|games\/index\.html|ip-gallery\/index\.html|assets\/games\/[a-z][a-z0-9-]*\.(?:webp|svg)|assets\/games\/videos\/[a-z][a-z0-9-]*\.mp4|characters\/[a-z][a-z0-9-]*\/index\.html|assets\/characters\/[a-z][a-z0-9-]*\.webp)$/);
       files.push(file);
     }
   }
 }
 await walk(directory);
 const htmlFiles = files.filter(file => file.endsWith('.html'));
-assert.equal(htmlFiles.length, 44, 'Preserve homepage, games, 41 characters, and 404');
+assert.equal(htmlFiles.length, 45, 'Preserve homepage, games, IP gallery, 41 characters, and 404');
 let checkedLinks = 0;
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
@@ -43,14 +43,14 @@ for (const file of htmlFiles) {
     if (url.hash) assert.ok((await readFile(target, 'utf8')).includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `Missing anchor ${raw}`);
     checkedLinks++;
   }
-  assert.ok(html.includes('<meta name="rencrow-base-path" content="/RenCrow.Co.Ltd/">'));
+  assert.ok(!/\s(?:href|src|poster|data-sheet-src|data-profile-href)="\/(?!\/)/.test(html), `Root-absolute internal URL in ${path.relative(directory, file)}`);
   assert.ok(html.includes('http-equiv="Content-Security-Policy"'));
   assert.ok(!html.includes('rencrow-coltd.ren-ai-coach.chatgpt.site'), 'Old publication origin in Pages HTML');
   assert.ok(!/(?:\/Users\/yukimi|192\.168\.|127\.0\.0\.1|localhost|[A-Z]:\\)/i.test(html), 'Private path/address in public HTML');
 }
 assert.ok((await stat(path.join(directory, '.nojekyll'))).isFile());
 const sitemap = await readFile(path.join(directory, 'sitemap.xml'), 'utf8');
-assert.equal((sitemap.match(/<loc>/g) || []).length, 43);
+assert.equal((sitemap.match(/<loc>/g) || []).length, 44);
 assert.ok(!sitemap.includes('chatgpt.site'));
 assert.ok((await readFile(path.join(directory, 'robots.txt'), 'utf8')).includes(site.href + 'sitemap.xml'));
 console.log(`Pages export passed: ${htmlFiles.length} HTML pages, ${checkedLinks} internal URLs, public-file allowlist, CSP and source isolation.`);
